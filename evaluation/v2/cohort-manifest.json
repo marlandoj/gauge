@@ -1,0 +1,9 @@
+{
+  "author": "Separate OpenAI Codex agent /root/gauge_diagnostic_author",
+  "created_at": "2026-09-23T16:56:48.309Z",
+  "sha256": "a078dd367cfea9c45c9b602510dfdbccad6e628736495eedfb3236b888c05c0f",
+  "cases": 30,
+  "groups": 30,
+  "human_reviewed": false,
+  "provenance": "Agent-authored fresh synthetic English tasks, labeled using only evaluation/PROTOCOL.md and evaluation/v2/PROTOCOL.md after the parent reported candidate and evaluator freeze at 2026-09-23T16:54:22.693Z. Author did not inspect classifier source, tests, development datasets, previous heldout, predictions, history or README; did not invoke providers or classifiers. Separate agent invocation, not a human review or an independent model/vendor panel. All labels are proposed and pending explicit human review. Exact and semantic overlap against unseen datasets has not been assessed by the author. Small balanced synthetic cohort; no representativeness, significance, production-usefulness or promotion claim."
+}

@@ -2,7 +2,7 @@ export const TIERS = ['trivial', 'simple', 'moderate', 'complex', 'apex'] as con
 export type Tier = typeof TIERS[number];
 export const HARNESSES = ['claude-code', 'codex', 'gemini', 'kimi', 'opencode', 'pi', 'hermes'] as const;
 export type Harness = typeof HARNESSES[number];
-export const VERSION = 'gauge-0.2.0';
+export const VERSION = 'gauge-0.1.0';
 export type Assessment = { tier: Tier | null; reasons: string[]; abstained: boolean };
 export function swarmTier(tier: Tier): Exclude<Tier, 'apex'> { return tier === 'apex' ? 'complex' : tier; }
 
@@ -12,48 +12,31 @@ export function classify(value: unknown): Assessment {
   const text = value.replace(/```[\s\S]*?```/g, ' ').trim().toLowerCase();
   if (!text || /^(continue|proceed|yes|ok|do it|fix (it|that)|same as before)[.!\s]*$/.test(text))
     return { tier: null, reasons: ['insufficient_context'], abstained: true };
-  const request = text.replace(/\b(?:do not|don't|never)\b[^.;!\n]*/g, ' ')
-    .replace(/\bwithout\s+(?:changing|modifying|implementing|designing|diagnosing|adding)\b[^.;!\n]*/g, ' ')
-    .replace(/^(?:please\s+|could you\s+|can you\s+)/, '');
-  const has = (re: RegExp) => re.test(request);
+  const has = (re: RegExp) => re.test(text);
   const result = (tier: Tier, reasons: string[]): Assessment => ({ tier, reasons, abstained: false });
-  const lookup = has(/^(what\b|define|explain|show|list|find|locate|print|count|tell me|give (me|the)|state|convert|translate|summari[sz]e|read|extract|report|return|inspect)\b/)
-    || has(/^in the supplied\b.*\breport\b/);
+  const lookup = has(/^(what\b|define|explain|show|list|find|locate|print|count|tell me|give (me|the)|state|convert|translate|summari[sz]e)\b/);
   const bounded = has(/\b(typo|spelling|rename|label|button text|heading|comment|readme|one line|single line|formatting)\b/);
-  const reasoning = has(/\b(design|redesign|architect|implement|build|create|develop|research|invent|formulate|migrate|merge|consolidate|diagnose|debug|investigate|prove|proving|derive|deriving|reconcile|optimi[sz]e|repair|fix|resolve|refactor|guarantee|determine|establish|add|synchroni[sz]e)\b/);
+  const reasoning = has(/\b(design|redesign|architect|implement|build|create|develop|research|invent|formulate|migrate|merge|consolidate|diagnose|debug|investigate|prove|proving|derive|deriving|reconcile|optimi[sz]e|repair|fix|resolve|refactor)\b/);
   const novelty = has(/\b(novel|first.principles|unprecedented|new algorithm|impossibility|formal proof|cross.domain synthesis)\b/);
-  const systemic = has(/\b(distributed|multi.region|consensus|linearizability|byzantine|zero.downtime|without downtime|deadlock|race|race condition|concurrent|concurrently|concurrency|racing|data loss|split.brain|cross.service|cross.tenant|tenant isolation|schema migration|schema evolution|schema changes|replication|idempotency|failover|backpressure|cutover|mixed.version)\b/);
+  const systemic = has(/\b(distributed|multi.region|consensus|linearizability|byzantine|zero.downtime|without downtime|deadlock|race condition|concurrent|concurrency|racing|data loss|split.brain|cross.service|cross.tenant|tenant isolation|schema migration|schema evolution|schema changes|replication|idempotency|failover|backpressure|cutover|mixed.version)\b/);
   const breadth = has(/\b(across|end.to.end|whole|entire|multiple|several|all services|platform|fleet)\b/);
   const domains = [ /\b(security|cryptograph|privacy|compliance|isolation)\b/, /\b(distributed|consensus|replication|regions)\b/, /\b(machine learning|inference|training|optimization)\b/, /\b(architecture|protocol|algorithm|proof)\b/ ].filter(re => has(re)).length;
   if (has(/^(evaluate|calculate|compute)\b/) && has(/\b(true|false|boolean|arithmetic)\b/) && !reasoning)
     return result('trivial', ['bounded_lookup']);
   if (has(/^(return|extract|sort)\b/) && has(/\b(filename|basename|alphabetical|alphabetically)\b/))
     return result('trivial', ['bounded_lookup']);
-  const fieldLookup = lookup && has(/\b(value|field|property|position|count|literal)\b/)
-    && !has(/\b(design|implement|build|create|develop|diagnose|debug|investigate|prove|derive|repair|fix|resolve|add|change|replace|update|compare|evaluate|recommend|analy[sz]e)\b/);
-  if (fieldLookup) return result('trivial', ['bounded_lookup']);
-  if (lookup && !reasoning && !has(/\b(compare|trade.offs|root cause|evaluate|recommend|change|replace|update)\b/))
+  if (lookup && !reasoning && !has(/\b(compare|trade.offs|root cause|evaluate|recommend)\b/))
     return result(has(/\b(report|logs|article|document|differences)\b/) ? 'simple' : 'trivial', ['bounded_lookup']);
-  const boundedChange = has(/\b(rename|change|replace|update|set)\b/)
-    && has(/\b(label|name|text|count|constant|flag|heading|padding|expectation)\b/)
-    && !has(/\b(design|migrate|synchroni[sz]e|aggregate|recovery|across|concurrently|concurrent|failover|diagnose|investigate|prove|implement|build)\b/);
-  if (boundedChange || (bounded && !systemic && !breadth && !novelty)) return result('simple', ['bounded_edit']);
-  const proof = has(/\b(prove|proving|proofs?|semantics|machine.checks|machine.verified|bounds?|guarantees?|optimality|counterexamples?|impossibility)\b/);
+  if (bounded && !systemic && !breadth && !novelty) return result('simple', ['bounded_edit']);
+  const proof = has(/\b(prove|proving|proofs?|semantics|machine.checks|machine.verified|bounds|guarantees|optimality)\b/);
   const research = has(/\b(research|invent|new|novel|synthesis|first.principles)\b/);
-  const feasibility = has(/\b(feasibility|impossibility|weakest .* assumption|incompatible|impossible|adversar(?:y|ial))\b/);
-  if (proof && ((reasoning && (research || systemic || feasibility)) || (research && feasibility))) return result('apex', ['research_proof_obligations']);
+  if (reasoning && proof && (research || systemic)) return result('apex', ['research_proof_obligations']);
   if (novelty && reasoning && (systemic || domains >= 2)) return result('apex', ['novel_reasoning', 'cross_domain']);
   if (systemic && reasoning) return result('complex', ['systemic_reasoning']);
-  const recovery = has(/\b(crash(?:es)?|rollback|recovery|compensations?|interrupt(?:ed|ions?)|partition|reconnects?|retries|retry)\b/);
-  const interacting = has(/\b(workers?|services|clients|regions|versions|queue|database|commit|acknowledgement|offline|leases|synchroni[sz]ation)\b/);
-  const invariant = has(/\b(exactly.once|one invoice|once|duplicate|repeats|conflicts?|conflict resolution|preserv\w*|prevent\w*|retain\w*|guarantee\w*)\b/);
-  if (reasoning && recovery && interacting && invariant) return result('complex', ['recovery_invariants']);
   if (breadth && reasoning && has(/\b(migration|migrate|architecture|architect|security|authentication|rollback|compatibility|transaction|protocol)\b/))
     return result('complex', ['cross_boundary_change']);
   if (reasoning && has(/\b(rollback|fairness|fair|fair service|isolated)\b/) && has(/\b(versions|fleet|providers|sessions|tenants|services|rollout)\b/))
     return result('complex', ['cross_boundary_change']);
-  if (has(/\b(aggregate|synchroni[sz]ed|persist|reuse)\b/)
-    && has(/\b(checks|preference|screen|form|api|reloads|error formats)\b/)) return result('moderate', ['bounded_engineering']);
   if (!systemic && !breadth && has(/\b(pure function|standard .* formula|supplied|provided|single.file|existing .* field)\b/)
     && !has(/\b(parser|formats|ingestion|validation|recovery)\b/)) return result('simple', ['bounded_edit']);
   if (has(/\b(endpoint|api|client|form|parser|cache|ingestion|pagination|paging|ttl)\b/)

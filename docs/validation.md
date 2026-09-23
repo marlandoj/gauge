@@ -1,12 +1,16 @@
 # Validation — September 23, 2026
 
+## Current v2 disposition
+
+V2 development, freeze, diagnostic scoring and mechanical checks are complete. Promotion is rejected. The [v2 report](../evaluation/v2/REPORT.md) records 15/30 fresh diagnostic accuracy, versus v1 13/30 on the same cases, all 67 tests passing with external fixtures enabled, and unchanged shadow routing. The original results below remain historical evidence. D01–D25 were explicitly approved and used for development; the fresh H01–H30 labels remain pending.
+
 ## Development review follow-up
 
-The [review packet](../evaluation/REVIEW.md) supplies 25 new agent-authored cases in 16 groups, with five proposed labels per tier. All remain pending. Task wording includes short difficult requests, long localized requests, and same-topic tasks at different tiers. No classifier scoring or tuning was performed on this packet.
+The [review packet](../evaluation/REVIEW.md) supplied 25 agent-authored cases in 16 groups, with five proposed labels per tier. They were pending at the original packet release and subsequently approved by the operator. Task wording includes short difficult requests, long localized requests, and same-topic tasks at different tiers. No classifier scoring or tuning was performed at the original packet release; v2 subsequently used the approved snapshot.
 
 The review validator and exporter passed 11 new tests; the portable suite passed 44 tests and skipped 14 tests requiring external swarm fixtures. TypeScript passed. The skipped external tests were not rerun for this evaluation-only change; the earlier release's integration results below are historical evidence. Tests cover pending/disputed reviews, corrections, invalid dates, missing attestations, duplicate tasks, altered case/rubric digests, CLI rejection and no-overwrite private export. A real CLI check reported 25 unresolved cases and exited 2 as intended.
 
-Exports are development-only and explicitly do not authorize promotion. The tool validates supplied attestations but does not authenticate reviewer identity. It refuses to overwrite an existing snapshot; that does not make disk contents immutable. The original classifier, datasets, protocol, freeze and held-out result are unchanged. Human review remains necessary before freezing development labels. A separate independent human-reviewed cohort is still required after the next candidate is frozen.
+Exports are development-only and explicitly do not authorize promotion. The tool validates supplied attestations but does not authenticate reviewer identity. It refuses to overwrite an existing snapshot; that does not make disk contents immutable. The original classifier is archived byte-for-byte in evaluation/v2/classifier-v1.ts; original datasets, protocol, freeze and held-out result are unchanged. Development-label approval is complete. Separate human review of fresh evaluation labels remains necessary for promotion review.
 
 ## Disposition
 
@@ -14,7 +18,7 @@ The shadow instrumentation and package pass their targeted mechanical checks. **
 
 ## Frozen diagnostic
 
-80 fresh agent-authored synthetic tasks were grouped into 40 paired-paraphrase scenarios, then split into 60 development tasks and 20 held-out tasks. A delegated evaluation author did not inspect the classifier. The candidate source was frozen before the one-time held-out evaluation. It has not been changed since. This is a small English-only diagnostic, not human labeling or a production benchmark.
+80 fresh agent-authored synthetic tasks were grouped into 40 paired-paraphrase scenarios, then split into 60 development tasks and 20 held-out tasks. A delegated evaluation author did not inspect the classifier. The v1 candidate source was frozen before the one-time held-out evaluation and remains available in the v1 archive. V2 was tuned only on development material and evaluated on a separate cohort. This is a small English-only diagnostic, not human labeling or a production benchmark.
 
 | Held-out measure | Gauge | Existing local classifier | Swarm length classifier |
 | --- | ---: | ---: | ---: |

@@ -17,4 +17,4 @@ flowchart LR
     M[Timeout or storage failure] --> C
 ```
 
-No arrow from the proposal to production selection exists. The observer returns the previously computed model; it cannot authorize qualification, promote a catalog route or change a native session. Five assessment tiers map to four swarm tiers at the resolver boundary; apex maps to complex. The initial classifier is rejected for promotion pending a fresh, human-reviewed evaluation.
+No arrow from the proposal to production selection exists. The observer returns the previously computed model; it cannot authorize qualification, promote a catalog route or change a native session. Five assessment tiers map to four swarm tiers at the resolver boundary; apex maps to complex. Both v1 and v2 failed promotion criteria. The v2 diagnostic and pending human label review are documented in [the report](../evaluation/v2/REPORT.md).

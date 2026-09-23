@@ -6,7 +6,7 @@
 
 Gauge assesses task complexity locally and compares a model proposal through your existing Zouroboros swarm resolver. One shared integration serves Claude Code, Codex, Gemini, Kimi, OpenCode, Pi and Hermes. An explicit JSON CLI supports standalone sessions.
 
-**Status: experimental, shadow only. The initial candidate was rejected for promotion.** Its held-out synthetic accuracy was 8/20 (40%), with 6 abstentions and zero exact matches on four complex tasks. Existing local and length-only baselines scored 5/20 and 4/20 on this cohort. Better aggregate scores do not establish useful routing quality. Nothing here switches production models.
+**Status: experimental, shadow only. Both candidates were rejected for promotion.** Version 0.2.0 scored 15/30 (50%) on a fresh separately authored synthetic diagnostic; v1 scored 13/30 on those same cases. The candidate still underestimated six of twelve complex/apex tasks and abstained on one more. Labels await human review. The original v1 held-out result, 8/20 (40%), remains preserved. Nothing here switches production models. See the [v2 report](evaluation/v2/REPORT.md).
 
 ## What it does
 
@@ -63,7 +63,7 @@ JSONL accepts records up to 8 KiB and stops appending at 4 MiB. It never deletes
 
 See [validation](docs/validation.md), [baseline](docs/baseline.md), [evaluation protocol](evaluation/PROTOCOL.md), and [editable workflow](docs/workflow.md).
 
-The follow-up [development label review](evaluation/REVIEW.md) contains 25 synthetic cases explicitly approved by the operator, with [approval provenance](evaluation/APPROVAL.md) and a [frozen development cohort](evaluation/development-reviewed.json). Its [JSON packet](evaluation/review-packet.json) and `evaluation/review.ts` validator preserve label provenance and refuse to freeze unresolved reviews. These developer-visible cases cannot serve as an independent holdout. No classifier tuning or new accuracy claim has been made.
+The follow-up [development label review](evaluation/REVIEW.md) contains 25 synthetic cases explicitly approved by the operator, with [approval provenance](evaluation/APPROVAL.md) and a [frozen development cohort](evaluation/development-reviewed.json). Its [JSON packet](evaluation/review-packet.json) and `evaluation/review.ts` validator preserve label provenance and refuse to freeze unresolved reviews. These developer-visible cases were used to tune v2 and cannot serve as an independent holdout. V2 matches 25/25 approved development labels and 60/60 original development labels; its 50% fresh diagnostic result shows that the generalization problem persists. The [H01–H30 label packet](evaluation/v2/LABEL-REVIEW.md) is ready for human review. Its proposals are not automatically accepted.
 
 - One frozen dataset: 60 development tasks and 20 held-out tasks, grouped by paraphrase before the split; 40 independent scenarios total.
 - Agent-authored English labels are diagnostic, not human ground truth. Development accuracy was 100%; held-out accuracy fell to 40%, showing poor generalization.

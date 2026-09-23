@@ -1,0 +1,54 @@
+{
+  "evaluation/development.jsonl": {
+    "sha256": "6237b1eb765815a9415321ada616baabd4007c03d5cb57a43329c3c1ac3dc01b",
+    "unchanged": true
+  },
+  "evaluation/heldout.jsonl": {
+    "sha256": "5170b559cbd44b02010ef6afd85a183b4f90a2d2af5ce50a2fb48cd4f16a0013",
+    "unchanged": true
+  },
+  "evaluation/results-heldout.json": {
+    "sha256": "88661f8e00d6df00240ae005c7fbe6ebe80a7f16907daccc44e0520270869c89",
+    "unchanged": true
+  },
+  "evaluation/results-development.json": {
+    "sha256": "e1a74647d02081061fcd43ef269986f4e5cf10475ea1c691e9e856d2c83b98a9",
+    "unchanged": true
+  },
+  "evaluation/manifest.json": {
+    "sha256": "047fde27e178e3b0e5475608161408d67681425a7bb137f57baf1f8cbfde0cb5",
+    "unchanged": true
+  },
+  "evaluation/PROTOCOL.md": {
+    "sha256": "109a16dda1c35fabb151fd3fe0efe7a1be1b10d5c96a94b79362c10e75b056ad",
+    "unchanged": true
+  },
+  "evaluation/candidate-freeze.json": {
+    "sha256": "a5ce85a144b4fd938385c08d2c265e84cd5477a4a5ea32a27883ded6d485e203",
+    "unchanged": true
+  },
+  "evaluation/heldout-opened.json": {
+    "sha256": "a14db275676ee5b2b1161e8d82bba6013ef266cf30c5b0e5f4227ed775605369",
+    "unchanged": true
+  },
+  "evaluation/development-reviewed.json": {
+    "sha256": "c4a23aa16742d8ff42e871b74c09c0eacc5fe2106ef3ea2ddc9158005a19dd4d",
+    "unchanged": true
+  },
+  "evaluation/review-packet.json": {
+    "sha256": "343365c34c11b5ad0665baa4ca391824fa4126bbd45d162a6127daf6e117ccf5",
+    "unchanged": true
+  },
+  "src/assess.ts": {
+    "sha256": "a50e656928bab72a8b94797736e874d95651cd5641d65336198892651f06e918",
+    "unchanged": true
+  },
+  "integrations/task-assessment-observer.ts": {
+    "sha256": "610f5c7a38e7f8efbff2a1961fd8a398e9a2e2cd4241deef9eeddf1dcb7c5fdc",
+    "unchanged": true
+  },
+  "archived_classifier_v1": {
+    "sha256": "bfe65579f7deb9f0087faca55f4ada6258676e8f6d1011b3b083a3133cd403e9",
+    "unchanged": true
+  }
+}

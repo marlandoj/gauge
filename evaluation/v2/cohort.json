@@ -1,0 +1,212 @@
+[
+  {
+    "id": "H01",
+    "group_id": "gauge-v2-independent-emergency-notice",
+    "task_text": "The emergency drill notice says: \"North gate closes at 09:10. South gate closes at 09:25. First aid opens at 08:50. All times are local. Security staff should use their assigned entrance. The evacuation rehearsal starts at 09:40 and ends at 10:15.\" Return only the south gate closing time.",
+    "tier": "trivial",
+    "rationale": "The answer is an explicitly supplied value; the emergency setting and surrounding instructions add no reasoning requirement."
+  },
+  {
+    "id": "H02",
+    "group_id": "gauge-v2-independent-recipe-format",
+    "task_text": "In our recipe page, servings are already stored as an integer. Add a small JavaScript function that returns \"1 serving\" for 1 and \"N servings\" for any other positive integer N. Inputs are guaranteed to be positive integers.",
+    "tier": "simple",
+    "rationale": "A single familiar formatting function with one explicit branch is sufficient."
+  },
+  {
+    "id": "H03",
+    "group_id": "gauge-v2-independent-library-renewal",
+    "task_text": "Add a renewal button to our library account page. The existing renewal API returns either a new due date, a holds-block-renewal response, or a temporary failure. Use the existing signed-in client and date formatter. Show pending state, prevent a second click while pending, update that loan after success, and keep its current due date with a useful message on either failure. Cover these responses with the existing component test setup.",
+    "tier": "moderate",
+    "rationale": "This bounded UI feature coordinates a request and several known display states using supplied contracts."
+  },
+  {
+    "id": "H04",
+    "group_id": "gauge-v2-independent-warehouse-labels",
+    "task_text": "Our warehouse is replacing its parcel-label service while three packing sites keep shipping. Some sites lose connectivity for hours, printers may print a label even when the acknowledgement is lost, and the carrier bills each issued tracking number. Both services must coexist for a month. Design and implement the cutover, including what operators do with uncertain print outcomes, how records reconcile when a site reconnects, and how to reverse the rollout without charging twice or assigning one tracking number to two parcels.",
+    "tier": "complex",
+    "rationale": "The cutover spans offline sites, external billing and irreversible physical printing, with interacting identity and recovery constraints."
+  },
+  {
+    "id": "H05",
+    "group_id": "gauge-v2-independent-water-sensors",
+    "task_text": "We want to infer a leak location in a branching water network from pressure sensors that can be installed at only four junctions. The pipe response model is known, but demand varies within supplied bounds and a sensor may drift by an unknown constant. Develop a sensor-placement and inference method that can distinguish every single-pipe leak it claims to locate. Characterize which network shapes make that guarantee unattainable, and substantiate the result mathematically as well as on simulated networks.",
+    "tier": "apex",
+    "rationale": "This requires developing and analyzing an inference method under nuisance parameters, including identifiability limits rather than implementing an established contract."
+  },
+  {
+    "id": "H06",
+    "group_id": "gauge-v2-independent-cipher-capitalization",
+    "task_text": "Convert the exact text \"rotate encryption keys\" to uppercase. Return the converted text only.",
+    "tier": "trivial",
+    "rationale": "Uppercasing supplied text is an elementary transformation regardless of its security vocabulary."
+  },
+  {
+    "id": "H07",
+    "group_id": "gauge-v2-independent-museum-filter",
+    "task_text": "A museum catalogue has an in-memory array of objects with a numeric year field. Write a Python function that returns the objects whose years fall between the supplied start and end years, inclusive, preserving their order. All fields and arguments are valid integers; return an empty list when start exceeds end.",
+    "tier": "simple",
+    "rationale": "This is an isolated range filter with explicit semantics and no integration decisions."
+  },
+  {
+    "id": "H08",
+    "group_id": "gauge-v2-independent-expense-import",
+    "task_text": "Add a CSV expense import to the existing personal-budget app. The parser already returns rows with date, amount and category strings; use the supplied date and decimal validators. Display all row errors before allowing import, reject duplicate rows within the file, and submit valid rows in one call to the existing all-or-nothing create-expenses endpoint. Show the returned totals and let the user correct the file after a rejected request.",
+    "tier": "moderate",
+    "rationale": "The feature combines established validation, a preview and one transactional API with bounded edge cases."
+  },
+  {
+    "id": "H09",
+    "group_id": "gauge-v2-independent-concert-admission",
+    "task_text": "A concert venue sells tickets through its website and two resellers, and admits guests with handheld scanners that can work offline. Replace the current ticket identifier format during the next season while honoring old tickets, transfers, refunds and delayed reseller updates. Work out and implement the acceptance rules across sellers and scanners, including how staff handle conflicting offline admissions, how refunds are reconciled, and how the venue can retreat from the rollout after some new tickets have been used.",
+    "tier": "complex",
+    "rationale": "Multiple independently operating channels and physical admissions require migration rules and explicit handling of conflicting, irreversible outcomes."
+  },
+  {
+    "id": "H10",
+    "group_id": "gauge-v2-independent-tactile-routing",
+    "task_text": "A research team wants a walking-route planner for blind users whose map has uncertain curb and crossing information. Travelers can report observations along the way, but those reports have uneven reliability and taking a detour changes which facts can be learned. Develop a planning method that trades travel cost against learning while bounding exposure to inaccessible segments. State the assumptions needed for a useful bound, establish where the bound cannot hold, and compare the method with suitable existing approaches on a reproducible simulation.",
+    "tier": "apex",
+    "rationale": "The requested outcome is a new planning formulation with coupled learning and safety constraints, theoretical limits and research evaluation."
+  },
+  {
+    "id": "H11",
+    "group_id": "gauge-v2-independent-invoice-subtraction",
+    "task_text": "An invoice has a subtotal of 80 dollars and a discount of 15 dollars. There is no tax or other charge. What is the final total?",
+    "tier": "trivial",
+    "rationale": "Only one elementary subtraction is needed."
+  },
+  {
+    "id": "H12",
+    "group_id": "gauge-v2-independent-photo-caption",
+    "task_text": "Change the photo viewer so that a missing or whitespace-only caption displays \"Untitled photo\". The caption is a string or null, and the existing component already receives it. Keep a nonblank caption exactly as supplied.",
+    "tier": "simple",
+    "rationale": "A localized display condition is fully specified and needs no wider design."
+  },
+  {
+    "id": "H13",
+    "group_id": "gauge-v2-independent-garden-watering",
+    "task_text": "Build the watering-schedule editor in our gardening app using its existing schedule API. Users choose weekdays and a local start time, can disable the schedule without losing their choices, and must select at least one day when enabling it. Load the saved values, track unsaved edits, show field errors returned by the API, and ask before leaving with unsaved changes. The API owns execution and timezone handling.",
+    "tier": "moderate",
+    "rationale": "Several related form and persistence states must work together, while execution and time semantics are supplied by an existing service."
+  },
+  {
+    "id": "H14",
+    "group_id": "gauge-v2-independent-payroll-ledger",
+    "task_text": "A company is moving payroll deductions from a nightly file exchange to events while the old and new paths run together. Corrections may arrive after a pay period closes, employees can change legal entities, and the bank can accept a payment before our connection drops. Design and deliver the transition across payroll, accounting and bank reconciliation so each deduction has one auditable financial effect. Include recovery from partial completion and a rollback plan that respects payments already sent.",
+    "tier": "complex",
+    "rationale": "The task joins financial systems with delayed corrections and uncertain external effects, requiring cross-system invariants and recovery design."
+  },
+  {
+    "id": "H15",
+    "group_id": "gauge-v2-independent-collaborative-cad",
+    "task_text": "Design a merge model for a collaborative CAD sketch editor in which users can concurrently add geometric constraints, delete geometry and move points while disconnected. We need replicas to agree after exchanging edits, useful preservation of each user’s intent, and a valid sketch whenever the combined intentions can be satisfied. Define those goals precisely, determine which can be achieved together, and support the proposed semantics with rigorous arguments and counterexamples for the remaining cases.",
+    "tier": "apex",
+    "rationale": "The request asks to establish new merge semantics for interacting geometric constraints and resolve difficult compatibility and feasibility questions."
+  },
+  {
+    "id": "H16",
+    "group_id": "gauge-v2-independent-research-unit",
+    "task_text": "A laboratory note records a tube length of 250 millimeters. Express that length in centimeters, with no other conversion.",
+    "tier": "trivial",
+    "rationale": "A single fixed unit conversion determines the answer."
+  },
+  {
+    "id": "H17",
+    "group_id": "gauge-v2-independent-chess-clock",
+    "task_text": "The chess clock settings panel already has a reset handler and an accessible button style. Add a \"Reset clocks\" button that invokes that handler once per click and is disabled whenever the existing gameRunning boolean is true.",
+    "tier": "simple",
+    "rationale": "This is a small component change wired to existing behavior with one explicit disabled condition."
+  },
+  {
+    "id": "H18",
+    "group_id": "gauge-v2-independent-language-flashcards",
+    "task_text": "Add a study-session summary to the flashcard app. The existing session object supplies ordered answers, each with a card ID and a correct flag, and the card store supplies the question text. Show total answers, correct percentage rounded to a whole number, and a list of missed cards without duplicates in first-missed order. Handle an empty session and deleted cards, then let the user start a practice session containing the remaining missed cards through the existing navigation action.",
+    "tier": "moderate",
+    "rationale": "This bounded feature combines aggregation, deduplication, missing records and a related navigation action under existing interfaces."
+  },
+  {
+    "id": "H19",
+    "group_id": "gauge-v2-independent-railway-reservations",
+    "task_text": "Our railway reservation service currently assigns seats per train, but a seat can now be sold for separate, nonoverlapping portions of a journey. Introduce segment-based inventory while booking, cancellation, wait-list promotion and payment callbacks continue to run on multiple workers. Existing bookings must remain valid during rollout. Implement the change and show how concurrent requests, duplicate callbacks and a failed migration batch recover without overlapping seat assignments or losing a paid reservation.",
+    "tier": "complex",
+    "rationale": "The new inventory model interacts with concurrent workers, payments and migration, and its correctness depends on several shared invariants."
+  },
+  {
+    "id": "H20",
+    "group_id": "gauge-v2-independent-crop-trials",
+    "task_text": "We have crop-trial data where farms choose their own treatments, weather is only partly observed, and nearby fields can affect one another. Researchers want to know when a treatment recommendation for a new region is actually justified by these data. Develop an identification framework that makes the interference and selection assumptions explicit, derive estimators for the cases it permits, and demonstrate indistinguishable data-generating examples when the recommendation cannot be identified.",
+    "tier": "apex",
+    "rationale": "This is an open research task in causal identification with selection, interference and transfer, requiring estimators and impossibility evidence."
+  },
+  {
+    "id": "H21",
+    "group_id": "gauge-v2-independent-legal-copy",
+    "task_text": "For the document index, copy the case reference from this line exactly: \"Hearing postponed; reference: AB-2047; next review pending.\" Return only the reference, including its hyphen.",
+    "tier": "trivial",
+    "rationale": "The requested output is a direct extraction from supplied text; no legal interpretation is needed."
+  },
+  {
+    "id": "H22",
+    "group_id": "gauge-v2-independent-bakery-rounding",
+    "task_text": "Write a function for the bakery order page that converts a requested nonnegative integer number of rolls into the minimum number of six-roll boxes needed. Return 0 for no rolls. Inputs are already validated, and partial boxes are not sold.",
+    "tier": "simple",
+    "rationale": "An isolated arithmetic function with completely specified inputs and output is enough."
+  },
+  {
+    "id": "H23",
+    "group_id": "gauge-v2-independent-volunteer-roster",
+    "task_text": "Add a volunteer shift signup view to the existing community-centre site. The API supplies open shifts and accepts signup requests; it may reject one because the final place was just taken. Show loading and empty states, disable the selected shift while submitting, refresh availability after that rejection, and show confirmed signups in the user’s existing roster. Use the current authentication and API client.",
+    "tier": "moderate",
+    "rationale": "The work is a bounded integration of listing, submission and established rejection behavior, without designing the underlying capacity system."
+  },
+  {
+    "id": "H24",
+    "group_id": "gauge-v2-independent-research-archive",
+    "task_text": "A university must consolidate two research-data archives whose identifiers sometimes collide. Publications already cite both archives, permissions come from different campus directories, and some files are under retention holds. Plan and implement a phased migration that preserves citations and access decisions while both archives accept new deposits. Account for directory outages, interrupted copies, reconciliation of deposits during the move and rollback after users have published citations to the combined archive.",
+    "tier": "complex",
+    "rationale": "Persistent external references, access control, retention and concurrent deposits interact across systems and constrain both migration and rollback."
+  },
+  {
+    "id": "H25",
+    "group_id": "gauge-v2-independent-robot-fleet",
+    "task_text": "For a fleet of delivery robots, develop a distributed coordination method that keeps a congested corridor usable when robots have different widths, only detect nearby robots and may stop indefinitely. Determine the weakest environmental assumptions under which every robot that keeps functioning can eventually get through without collision. Provide a correctness argument, explain the configurations where the goal is impossible, and evaluate how the method behaves as traffic grows.",
+    "tier": "apex",
+    "rationale": "The task requires algorithm development and establishing safety and progress limits under local information and failures."
+  },
+  {
+    "id": "H26",
+    "group_id": "gauge-v2-independent-disaster-title",
+    "task_text": "We are assembling a long disaster-recovery manual with chapters on backups, incident command, credential rotation, communications, restoration, verification and post-incident follow-up. For now, the only requested edit is to replace the title \"Disaster Recovery Handbook\" with \"Service Recovery Handbook\". Return the new title exactly.",
+    "tier": "trivial",
+    "rationale": "Despite the broad operational context, the requested outcome is only a supplied text replacement."
+  },
+  {
+    "id": "H27",
+    "group_id": "gauge-v2-independent-aquarium-warning",
+    "task_text": "In the aquarium dashboard, change the temperature badge to show \"Above target\" when the supplied reading is greater than the supplied maximum, \"Below target\" when it is less than the supplied minimum, and \"In range\" otherwise. Readings are valid numbers and minimum never exceeds maximum. Implement this as one reusable function.",
+    "tier": "simple",
+    "rationale": "Three explicit numeric branches in one function make this a localized familiar implementation."
+  },
+  {
+    "id": "H28",
+    "group_id": "gauge-v2-independent-podcast-bookmarks",
+    "task_text": "Add timestamp bookmarks to the podcast player using its existing per-episode bookmark endpoint and playback seek function. Users can save the current position with a short optional note, edit that note, delete a bookmark and select one to seek. Keep bookmarks ordered by timestamp, retain edits when a save fails, and handle bookmarks beyond the duration if an episode file has been shortened. Follow the supplied endpoint contract and existing app controls.",
+    "tier": "moderate",
+    "rationale": "This is a contained feature spanning UI and known persistence actions with several specified edge cases."
+  },
+  {
+    "id": "H29",
+    "group_id": "gauge-v2-independent-district-heating",
+    "task_text": "A district-heating operator is replacing the controller software at substations without shutting down the network. Old and new controllers interpret some setpoints differently, telemetry can be delayed, and central commands may be replayed after reconnection. Coordinate the rollout with the existing physical safety interlocks, define how control authority transfers and how an operator recovers after a partial update, then verify the plan in the supplied network simulator before field deployment.",
+    "tier": "complex",
+    "rationale": "Mixed controller versions, distributed control authority and physical operating constraints demand coordinated rollout and consequential recovery verification."
+  },
+  {
+    "id": "H30",
+    "group_id": "gauge-v2-independent-stream-compression",
+    "task_text": "Design a streaming compressor for sequences of attributed graphs whose vertex names may change between snapshots. Memory must stay below a fixed budget, and a decoder must reconstruct every snapshot exactly. Explore how much renaming-invariant structure can be exploited without storing entire snapshots, give achievable space and compression bounds for a clearly defined graph family, and establish a lower bound showing when those gains are unavailable.",
+    "tier": "apex",
+    "rationale": "This asks for algorithmic research combining exact streaming reconstruction, graph equivalence and upper and lower bounds."
+  }
+]

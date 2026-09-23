@@ -1,6 +1,6 @@
 # Gauge development label review
 
-Status: approved by the operator. All 25 agent-authored proposals D01–D25 were explicitly accepted without corrections. See [approval provenance](APPROVAL.md) and the [frozen development cohort](development-reviewed.json). This packet has not been scored against Gauge.
+Status: approved by the operator. All 25 agent-authored proposals D01–D25 were explicitly accepted without corrections. See [approval provenance](APPROVAL.md) and the [frozen development cohort](development-reviewed.json). V2 used this development cohort and scored 25/25; see the [v2 report](v2/REPORT.md) for the separate diagnostic failure.
 
 This is a development cohort for diagnosing generalization, with five proposals per tier. Its author and implementer can see every case, so it cannot become an independent holdout, even after human review. It is synthetic and balanced rather than a sample of production traffic. No user prompts or confidential records were copied here.
 
@@ -63,4 +63,4 @@ bun /absolute/path/gauge/evaluation/review.ts freeze /absolute/path/reviewed-pac
 
 `check` exits 2 for pending or disputed labels, 1 for invalid input, and 0 for structurally complete review. `freeze` refuses unresolved labels, rubric drift, relative paths and existing output files. It exports a private, development-only snapshot with source/rubric digests and full review provenance. This is no-overwrite behavior, not tamper-proof storage; the owner can still modify a file afterward. No freeze or scoring happens automatically.
 
-The approved development labels are frozen in `development-reviewed.json`: 25 cases, 16 groups, five labels per tier, zero unresolved reviews. Next: improve the candidate using only development material, and freeze its implementation before a different evaluator prepares or reveals a genuinely independent human-reviewed holdout. Use production classifier exports for evaluation. Retain original results. Promotion remains a separate decision after quality and routing-preservation checks.
+The approved development labels are frozen in `development-reviewed.json`: 25 cases, 16 groups, five labels per tier, zero unresolved reviews. The v2 development and freeze phase is complete. A separate agent authored H01–H30 after that freeze, and the diagnostic scored 15/30 with quality gates failing. Those labels await [human review](v2/LABEL-REVIEW.md). Retain original results and do not retune the frozen candidate on its opened diagnostic. Promotion remains a separate decision after quality and routing-preservation checks.
