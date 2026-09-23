@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "cohort_id": "gauge-v3-diagnostic-N01-N40",
+  "purpose": "post-evaluation-human-label-approval",
+  "reviewer": "marlandoj",
+  "recorded_at": "2026-09-23T20:02:05.004136+00:00",
+  "user_message_timestamp": null,
+  "authority": {
+    "source": "current user message and operator-edited GitHub review packet",
+    "message": "https://github.com/marlandoj/gauge/blob/main/evaluation/v3/LABEL-REVIEW.md human review completed.",
+    "review_commit": "126f7c51c5e45132dbf63df9677028755d9dcfe6",
+    "reference": "evaluation/v3/APPROVAL.md"
+  },
+  "human_reviewed": true,
+  "review_attestation": "operator-supplied-not-independently-authenticated",
+  "reviewed_after_results_disclosed": true,
+  "production_promotion_authorized": false,
+  "promotion_status": "rejected-quality-gate",
+  "new_independent_holdout": false,
+  "source_sha256": {
+    "src/classifier.ts": "6d6bbc69cdb5eaca016516eeaf9de6062aa3a4043d24401034b935ac3f29776e",
+    "src/assess.ts": "a50e656928bab72a8b94797736e874d95651cd5641d65336198892651f06e918",
+    "src/receipts.ts": "e6cbc5e39c0caaeca951deab1124ceb83b61bc8444080a07bbc6431c2380110c",
+    "scripts/gauge.ts": "cd63653a8feaf96cd65e706eb5b8367c7b33b5e23e279b958d3155a0b4ba8c40",
+    "integrations/task-assessment-observer.ts": "610f5c7a38e7f8efbff2a1961fd8a398e9a2e2cd4241deef9eeddf1dcb7c5fdc",
+    "evaluation/v3/run.ts": "b51ed1db46e1e4b26c88a37c5b81daa2c0dc731dfb34088e9f377aca810e0666",
+    "evaluation/v3/classifier-v2.ts": "96e2ee2b277e373ebea457b4ce744b0cb2c55f9fb66d6c11fe8366393e6f4f55",
+    "evaluation/metrics.ts": "9f748c022320c34242908c396b05c85971e3c8f5d088cbe65448d8e1c99f0be0",
+    "evaluation/review.ts": "2b4b9766c19b5f658975a5efa99198cb22d9989e45557292088d4cd07839ef5c",
+    "evaluation/PROTOCOL.md": "109a16dda1c35fabb151fd3fe0efe7a1be1b10d5c96a94b79362c10e75b056ad",
+    "evaluation/v3/PROTOCOL.md": "1eb2c65d2512865f2e46418c290bc714722d1d888c88cde442b11df3f10373bf",
+    "evaluation/development.jsonl": "6237b1eb765815a9415321ada616baabd4007c03d5cb57a43329c3c1ac3dc01b",
+    "evaluation/development-reviewed.json": "c4a23aa16742d8ff42e871b74c09c0eacc5fe2106ef3ea2ddc9158005a19dd4d",
+    "evaluation/review-packet.json": "343365c34c11b5ad0665baa4ca391824fa4126bbd45d162a6127daf6e117ccf5",
+    "evaluation/v2/cohort.json": "a078dd367cfea9c45c9b602510dfdbccad6e628736495eedfb3236b888c05c0f",
+    "evaluation/v2/label-approval.json": "9d7adff4b6976b38f8585334ba202004acbb6cb09828a84e110220eee91c61b0",
+    "evaluation/v3/measure.ts": "9ab08e3688d6bac9c5970a6137042caabd6300d7a7e36896d41a23dea1d5d67f",
+    "evaluation/v3/cohort.json": "ca88152db08f7b12749a955ce822e149bd0cf2243bbed1b573174e857f6f5a97",
+    "evaluation/v3/cohort-manifest.json": "91cd971d031217404303ce2f0230d8ff578fea8a9d202baa147bb8760237ac53",
+    "evaluation/v3/results-diagnostic.json": "ec7a9856eb1aebb217b22552fa260cec6583294454d4ff4970363e1fa300e314",
+    "evaluation/v3/candidate-freeze.json": "c136cf6ea358b106384a2ae679de2e05b2f879f552c410e70d6a7382d7e77db6",
+    "evaluation/v3/diagnostic-opened.json": "f23a4c1c7fd926cbed8b8ed68698ea083194dc33bee0ac09aedf555a77f475e6",
+    "evaluation/v3/LABEL-REVIEW.md": "6100ae18e331bf8b712654a66a023d31eac9d777cf0d1b8c9bb605436ef2ec8a"
+  },
+  "case_digest_format": "SHA-256 of UTF-8 JSON array [id, group_id, task_text, tier, rationale], compact separators, literal Unicode",
+  "summary": {
+    "cases": 40,
+    "accepted": 39,
+    "corrected": 1,
+    "unresolved": 0,
+    "tiers": {
+      "trivial": 7,
+      "moderate": 8,
+      "complex": 8,
+      "simple": 9,
+      "apex": 8
+    }
+  },
+  "cases": [
+    {
+      "id": "N01",
+      "status": "accepted",
+      "proposed_tier": "trivial",
+      "approved_tier": "trivial",
+      "case_sha256": "9a53ccfa0d5a15acca02b5f8e1a7bfdec0203a964a747e97911e919a2a1d77e6"
+    },
+    {
+      "id": "N02",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "74867bb3f5a4e577e3ff09580280ac0865d0b14766368db1ed57b8154ac28849"
+    },
+    {
+      "id": "N03",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "987afe26b4fc102b029f61bb0601411c321c0cda5745e134413f18b02e978856"
+    },
+    {
+      "id": "N04",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "a0171f96225ac4f81ccb754944ca6f4ceb19fe96e3c5aa2eb4afe82b802fc7ca"
+    },
+    {
+      "id": "N05",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "376d880b05e43cebd4d2ea9bfacfb1ffc2358719797f271d438e7e3af2bc324f"
+    },
+    {
+      "id": "N06",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "6492356355dc6979a2ffc8f4d1646c659ad9d585014d360522cbaa71fa730fdf"
+    },
+    {
+      "id": "N07",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "243e7d9b458bf524c40cc3363fb8099b9d6b9e2f843740565df2535188d3edd6"
+    },
+    {
+      "id": "N08",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "c9e8f7efd25d8a4934b97def602465a93309da2599345f634dc1d724d6860cec"
+    },
+    {
+      "id": "N09",
+      "status": "corrected",
+      "proposed_tier": "trivial",
+      "approved_tier": "simple",
+      "case_sha256": "1024a550b99b192c6e362a17a5535eb87e74af44af5b013ce55aa32de10571d9",
+      "reviewer_reason_verbatim": "[reason:requires simple data parsing ]"
+    },
+    {
+      "id": "N10",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "922c53ef42ea150a5e94268c29388340e4c69d41bb7048cdf0f20871ad441a3f"
+    },
+    {
+      "id": "N11",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "9ba480fd7326c3b50b38f5a998b9a6957e015cbadd25247dc20c6487cb1c3d4d"
+    },
+    {
+      "id": "N12",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "858974f05b7541d6d05e96e2440034e6c9d8976aa076f76cfd2c26362246ae2a"
+    },
+    {
+      "id": "N13",
+      "status": "accepted",
+      "proposed_tier": "trivial",
+      "approved_tier": "trivial",
+      "case_sha256": "3b225d45b14981dd5be178f469ccc8925f55ce01036e48a4283c871241d158a6"
+    },
+    {
+      "id": "N14",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "9ea49f6049cd47152a977ab281ff4a1a57e210e109833fbc2fe5bd98aad6ead6"
+    },
+    {
+      "id": "N15",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "0b8bb40f64af121097a0232c60137e886fae91941ef968ca0a97a5755ada38eb"
+    },
+    {
+      "id": "N16",
+      "status": "accepted",
+      "proposed_tier": "trivial",
+      "approved_tier": "trivial",
+      "case_sha256": "56945ef39fe48d2d14f5ad698ca9becf1e94c2ad0b876e063c2f6ede0768f4b9"
+    },
+    {
+      "id": "N17",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "911e8c08451cabd58bceca3c6e22f0a898b324cfb948e38862d4efab78820728"
+    },
+    {
+      "id": "N18",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "2343352680f581676348253c6bf5792a6ebe31f8384b3a143cb12a99679f4a57"
+    },
+    {
+      "id": "N19",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "3045f766c3b47ca51a7b03e4413d87dc876b24a360630c5cae641c62f80e908d"
+    },
+    {
+      "id": "N20",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "41e9a5c33ce2f24da8fdb13155a40e7b08521fe7f7fa0d14dd9546808db4340f"
+    },
+    {
+      "id": "N21",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "0f042754d7665dc47671f4c234ca7dd5a428c47d22f1fcd81c3030926428b683"
+    },
+    {
+      "id": "N22",
+      "status": "accepted",
+      "proposed_tier": "trivial",
+      "approved_tier": "trivial",
+      "case_sha256": "5a575c5c4d3ee58b69858b7adf7e1a819fb8afbbaf986b30cfe5d8261f65f74b"
+    },
+    {
+      "id": "N23",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "31fefa5c18d8e4de9e06f99e87480784eeb20a64baa8f47ad902ddc27cbd10ff"
+    },
+    {
+      "id": "N24",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "ca76323662fd764b264be59f7d3b68f82c166b10387d3ca40da47a421c160da2"
+    },
+    {
+      "id": "N25",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "ab7bd77a9712e378f8ceecf3cffec265a0d0aae6799429e75c723538ff6b16f6"
+    },
+    {
+      "id": "N26",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "92bbb8e293bd40ea1d77643abc7d930d5bf3d61a40280d939f59bd155ec97567"
+    },
+    {
+      "id": "N27",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "6ea693cecbc0c1b5677a90b49f64280b79ad071b5908fbc01358ffdd8e6f65d1"
+    },
+    {
+      "id": "N28",
+      "status": "accepted",
+      "proposed_tier": "trivial",
+      "approved_tier": "trivial",
+      "case_sha256": "757b3a8256a5dac4be4c291bae875c9e8ce1594d727c6e89f147e75efc714d4b"
+    },
+    {
+      "id": "N29",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "e8e2764f19f125380576a03948b38f3948c80f67742bb6e14ce4785e091e73fa"
+    },
+    {
+      "id": "N30",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "95d23e3e9a499d9f920fce28c12697790c3a200842a0a4117abb7dc7576a2052"
+    },
+    {
+      "id": "N31",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "afb4b8848959a55451de16eb7c3445ec698b67f93c04978c10ea1f8a849b16e7"
+    },
+    {
+      "id": "N32",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "e2f3b0e0ff94aba814a8ae719bfd854791a201e7dc2746282ef5ef648928fbb6"
+    },
+    {
+      "id": "N33",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "3cee45a18e6b0c1e348d4a6ee0c4ddf205f8d32be2a3f07d59801190405064ba"
+    },
+    {
+      "id": "N34",
+      "status": "accepted",
+      "proposed_tier": "trivial",
+      "approved_tier": "trivial",
+      "case_sha256": "5fcb5b38546db04bdf6caf4a7294637dc8abed586bcf8a229e9c03da64fd0903"
+    },
+    {
+      "id": "N35",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "01979d3448ecf90393f2a17537403d315e86db79ce3576fd5bcb3b14d03c62dd"
+    },
+    {
+      "id": "N36",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "1493adb724f131cb12520aed996e5684024fe9f83a0dee1be78aa188cf402843"
+    },
+    {
+      "id": "N37",
+      "status": "accepted",
+      "proposed_tier": "trivial",
+      "approved_tier": "trivial",
+      "case_sha256": "dbbb5d2b96d32f3c697193449c7b3f85242cfc8f64eda7d87773339436fa4e2d"
+    },
+    {
+      "id": "N38",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "1abef1e85fc389a7ffa3fdd68e12e69b6cf4c28062238502c664fa85b9caf830"
+    },
+    {
+      "id": "N39",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "bf552e85eada1b5a70946459449ca9d7a14138cb6fbde33aacfb6801d410488d"
+    },
+    {
+      "id": "N40",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "3caf688865a26d26bb45665540e04b9b6f466e48b4a565412ee64ebf19f1a8b9"
+    }
+  ]
+}

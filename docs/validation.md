@@ -2,7 +2,7 @@
 
 ## Current v3 disposition
 
-The [v3 report](../evaluation/v3/REPORT.md) records 24/40 (60%) on fresh cases, versus archived v2 19/40 on the same inputs. The unchanged raw quality gate fails on a complex-task abstention; both separately reported fallback comparisons pass. Routing remains shadow-only. All 77 tests passed with external fixtures, and TypeScript passed. N01–N40 labels await human review. The sections below preserve earlier validation history.
+The [v3 report](../evaluation/v3/REPORT.md) preserves the original 24/40 (60%) diagnostic. [Human review is complete](../evaluation/v3/APPROVAL.md): 39 accepted labels and N09 corrected to simple. Saved predictions score 23/40 (57.5%) against the reviewed labels; archived v2 remains 19/40. The unchanged raw quality gate fails on a complex-task abstention. Routing remains shadow-only. The original release passed 77 tests with external fixtures and TypeScript. Approval validation reproduced original metrics and verified all 17 frozen source/input digests without rerunning the classifier. The sections below preserve earlier validation history.
 
 ## Historical v2 disposition
 

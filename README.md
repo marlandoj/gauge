@@ -6,7 +6,7 @@
 
 Gauge assesses task complexity locally and compares a model proposal through your existing Zouroboros swarm resolver. One shared integration serves Claude Code, Codex, Gemini, Kimi, OpenCode, Pi and Hermes. An explicit JSON CLI supports standalone sessions.
 
-**Status: experimental, shadow only. V3 is rejected for promotion.** Version 0.3.0 scored 24/40 (60%) on fresh separately authored synthetic cases, versus v2's 19/40 on those same inputs. V3 underestimated five of sixteen complex/apex tasks and abstained on one more, failing the unchanged quality gate. All N01–N40 labels await [human review](evaluation/v3/LABEL-REVIEW.md). Earlier results and approvals remain preserved. Nothing here switches production models. See the [v3 report](evaluation/v3/REPORT.md).
+**Status: experimental, shadow only. V3 is rejected for promotion.** Version 0.3.0 originally scored 24/40 (60%) on fresh separately authored synthetic cases. [Human review is complete](evaluation/v3/APPROVAL.md): 39 labels accepted and N09 corrected from trivial to simple. Saved predictions score 23/40 (57.5%) against the reviewed labels, versus v2's 19/40. V3 underestimated five of sixteen complex/apex tasks and abstained on one more, failing the unchanged quality gate. Original results and approvals remain preserved. Nothing here switches production models. See the [v3 report](evaluation/v3/REPORT.md).
 
 ## What it does
 

@@ -1,0 +1,1580 @@
+{
+  "schema_version": 1,
+  "kind": "post-review-reaggregation-of-saved-predictions",
+  "generated_at": "2026-09-23T20:02:06.283Z",
+  "source_sha256": {
+    "results-diagnostic.json": "ec7a9856eb1aebb217b22552fa260cec6583294454d4ff4970363e1fa300e314",
+    "label-approval.json": "b5983ced748598d5deba6431ccdb8e503f26abac8c60c65be23f84522b5c1912"
+  },
+  "classifier_executed": false,
+  "original_diagnostic_reopened": false,
+  "new_independent_holdout": false,
+  "production_promotion_authorized": false,
+  "metrics": {
+    "candidate": {
+      "tier_space": "five-tier",
+      "total": 40,
+      "accuracy": 0.575,
+      "correct": 23,
+      "confusion": {
+        "trivial": {
+          "trivial": 1,
+          "simple": 1,
+          "moderate": 1,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 4
+        },
+        "simple": {
+          "trivial": 1,
+          "simple": 6,
+          "moderate": 1,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 1
+        },
+        "moderate": {
+          "trivial": 0,
+          "simple": 2,
+          "moderate": 6,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 7,
+          "apex": 0,
+          "abstain": 1
+        },
+        "apex": {
+          "trivial": 1,
+          "simple": 2,
+          "moderate": 2,
+          "complex": 0,
+          "apex": 3,
+          "abstain": 0
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 7,
+          "recall": 0.14285714285714285,
+          "abstention": {
+            "count": 4,
+            "denominator": 7,
+            "rate": 0.5714285714285714
+          }
+        },
+        "simple": {
+          "total": 9,
+          "recall": 0.6666666666666666,
+          "abstention": {
+            "count": 1,
+            "denominator": 9,
+            "rate": 0.1111111111111111
+          }
+        },
+        "moderate": {
+          "total": 8,
+          "recall": 0.75,
+          "abstention": {
+            "count": 0,
+            "denominator": 8,
+            "rate": 0
+          }
+        },
+        "complex": {
+          "total": 8,
+          "recall": 0.875,
+          "abstention": {
+            "count": 1,
+            "denominator": 8,
+            "rate": 0.125
+          }
+        },
+        "apex": {
+          "total": 8,
+          "recall": 0.375,
+          "abstention": {
+            "count": 0,
+            "denominator": 8,
+            "rate": 0
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 5,
+        "denominator": 16,
+        "rate": 0.3125
+      },
+      "complex_apex_abstention": {
+        "count": 1,
+        "denominator": 16,
+        "rate": 0.0625
+      },
+      "unnecessary_escalation": {
+        "count": 3,
+        "denominator": 40,
+        "rate": 0.075
+      },
+      "two_or_more_tier_errors": {
+        "count": 6,
+        "denominator": 40,
+        "rate": 0.15,
+        "upward": 1,
+        "downward": 5
+      },
+      "abstention": {
+        "count": 6,
+        "denominator": 40,
+        "rate": 0.15
+      },
+      "groups": {
+        "total": 40,
+        "exact": {
+          "count": 23,
+          "denominator": 40,
+          "rate": 0.575
+        },
+        "severe_error": {
+          "count": 6,
+          "denominator": 40,
+          "rate": 0.15
+        },
+        "complex_apex_under_routing": {
+          "count": 5,
+          "denominator": 40,
+          "rate": 0.125
+        },
+        "abstention": {
+          "count": 6,
+          "denominator": 40,
+          "rate": 0.15
+        }
+      }
+    },
+    "previous": {
+      "tier_space": "five-tier",
+      "total": 40,
+      "accuracy": 0.475,
+      "correct": 19,
+      "confusion": {
+        "trivial": {
+          "trivial": 0,
+          "simple": 1,
+          "moderate": 1,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 5
+        },
+        "simple": {
+          "trivial": 0,
+          "simple": 7,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 2
+        },
+        "moderate": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 5,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 1,
+          "moderate": 1,
+          "complex": 5,
+          "apex": 0,
+          "abstain": 1
+        },
+        "apex": {
+          "trivial": 0,
+          "simple": 2,
+          "moderate": 3,
+          "complex": 0,
+          "apex": 2,
+          "abstain": 1
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 7,
+          "recall": 0,
+          "abstention": {
+            "count": 5,
+            "denominator": 7,
+            "rate": 0.7142857142857143
+          }
+        },
+        "simple": {
+          "total": 9,
+          "recall": 0.7777777777777778,
+          "abstention": {
+            "count": 2,
+            "denominator": 9,
+            "rate": 0.2222222222222222
+          }
+        },
+        "moderate": {
+          "total": 8,
+          "recall": 0.625,
+          "abstention": {
+            "count": 0,
+            "denominator": 8,
+            "rate": 0
+          }
+        },
+        "complex": {
+          "total": 8,
+          "recall": 0.625,
+          "abstention": {
+            "count": 1,
+            "denominator": 8,
+            "rate": 0.125
+          }
+        },
+        "apex": {
+          "total": 8,
+          "recall": 0.25,
+          "abstention": {
+            "count": 1,
+            "denominator": 8,
+            "rate": 0.125
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 7,
+        "denominator": 16,
+        "rate": 0.4375
+      },
+      "complex_apex_abstention": {
+        "count": 2,
+        "denominator": 16,
+        "rate": 0.125
+      },
+      "unnecessary_escalation": {
+        "count": 2,
+        "denominator": 40,
+        "rate": 0.05
+      },
+      "two_or_more_tier_errors": {
+        "count": 7,
+        "denominator": 40,
+        "rate": 0.175,
+        "upward": 1,
+        "downward": 6
+      },
+      "abstention": {
+        "count": 9,
+        "denominator": 40,
+        "rate": 0.225
+      },
+      "groups": {
+        "total": 40,
+        "exact": {
+          "count": 19,
+          "denominator": 40,
+          "rate": 0.475
+        },
+        "severe_error": {
+          "count": 7,
+          "denominator": 40,
+          "rate": 0.175
+        },
+        "complex_apex_under_routing": {
+          "count": 7,
+          "denominator": 40,
+          "rate": 0.175
+        },
+        "abstention": {
+          "count": 9,
+          "denominator": 40,
+          "rate": 0.225
+        }
+      }
+    },
+    "local": {
+      "tier_space": "five-tier",
+      "total": 40,
+      "accuracy": 0.325,
+      "correct": 13,
+      "confusion": {
+        "trivial": {
+          "trivial": 0,
+          "simple": 5,
+          "moderate": 2,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "simple": {
+          "trivial": 1,
+          "simple": 2,
+          "moderate": 4,
+          "complex": 2,
+          "apex": 0,
+          "abstain": 0
+        },
+        "moderate": {
+          "trivial": 0,
+          "simple": 0,
+          "moderate": 3,
+          "complex": 5,
+          "apex": 0,
+          "abstain": 0
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 8,
+          "apex": 0,
+          "abstain": 0
+        },
+        "apex": {
+          "trivial": 0,
+          "simple": 0,
+          "moderate": 4,
+          "complex": 4,
+          "apex": 0,
+          "abstain": 0
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 7,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 7,
+            "rate": 0
+          }
+        },
+        "simple": {
+          "total": 9,
+          "recall": 0.2222222222222222,
+          "abstention": {
+            "count": 0,
+            "denominator": 9,
+            "rate": 0
+          }
+        },
+        "moderate": {
+          "total": 8,
+          "recall": 0.375,
+          "abstention": {
+            "count": 0,
+            "denominator": 8,
+            "rate": 0
+          }
+        },
+        "complex": {
+          "total": 8,
+          "recall": 1,
+          "abstention": {
+            "count": 0,
+            "denominator": 8,
+            "rate": 0
+          }
+        },
+        "apex": {
+          "total": 8,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 8,
+            "rate": 0
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 8,
+        "denominator": 16,
+        "rate": 0.5
+      },
+      "complex_apex_abstention": {
+        "count": 0,
+        "denominator": 16,
+        "rate": 0
+      },
+      "unnecessary_escalation": {
+        "count": 18,
+        "denominator": 40,
+        "rate": 0.45
+      },
+      "two_or_more_tier_errors": {
+        "count": 8,
+        "denominator": 40,
+        "rate": 0.2,
+        "upward": 4,
+        "downward": 4
+      },
+      "abstention": {
+        "count": 0,
+        "denominator": 40,
+        "rate": 0
+      },
+      "groups": {
+        "total": 40,
+        "exact": {
+          "count": 13,
+          "denominator": 40,
+          "rate": 0.325
+        },
+        "severe_error": {
+          "count": 8,
+          "denominator": 40,
+          "rate": 0.2
+        },
+        "complex_apex_under_routing": {
+          "count": 8,
+          "denominator": 40,
+          "rate": 0.2
+        },
+        "abstention": {
+          "count": 0,
+          "denominator": 40,
+          "rate": 0
+        }
+      }
+    },
+    "swarm": {
+      "tier_space": "five-tier",
+      "total": 40,
+      "accuracy": 0.475,
+      "correct": 19,
+      "confusion": {
+        "trivial": {
+          "trivial": 3,
+          "simple": 4,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "simple": {
+          "trivial": 0,
+          "simple": 9,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "moderate": {
+          "trivial": 0,
+          "simple": 1,
+          "moderate": 7,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 0,
+          "moderate": 8,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "apex": {
+          "trivial": 0,
+          "simple": 0,
+          "moderate": 8,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 7,
+          "recall": 0.42857142857142855,
+          "abstention": {
+            "count": 0,
+            "denominator": 7,
+            "rate": 0
+          }
+        },
+        "simple": {
+          "total": 9,
+          "recall": 1,
+          "abstention": {
+            "count": 0,
+            "denominator": 9,
+            "rate": 0
+          }
+        },
+        "moderate": {
+          "total": 8,
+          "recall": 0.875,
+          "abstention": {
+            "count": 0,
+            "denominator": 8,
+            "rate": 0
+          }
+        },
+        "complex": {
+          "total": 8,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 8,
+            "rate": 0
+          }
+        },
+        "apex": {
+          "total": 8,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 8,
+            "rate": 0
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 16,
+        "denominator": 16,
+        "rate": 1
+      },
+      "complex_apex_abstention": {
+        "count": 0,
+        "denominator": 16,
+        "rate": 0
+      },
+      "unnecessary_escalation": {
+        "count": 4,
+        "denominator": 40,
+        "rate": 0.1
+      },
+      "two_or_more_tier_errors": {
+        "count": 8,
+        "denominator": 40,
+        "rate": 0.2,
+        "upward": 0,
+        "downward": 8
+      },
+      "abstention": {
+        "count": 0,
+        "denominator": 40,
+        "rate": 0
+      },
+      "groups": {
+        "total": 40,
+        "exact": {
+          "count": 19,
+          "denominator": 40,
+          "rate": 0.475
+        },
+        "severe_error": {
+          "count": 8,
+          "denominator": 40,
+          "rate": 0.2
+        },
+        "complex_apex_under_routing": {
+          "count": 16,
+          "denominator": 40,
+          "rate": 0.4
+        },
+        "abstention": {
+          "count": 0,
+          "denominator": 40,
+          "rate": 0
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "local": {
+      "passed": false,
+      "checks": {
+        "accuracy_at_least_baseline": true,
+        "fewer_complex_apex_misses": true,
+        "no_increase_severe_errors": true,
+        "no_complex_apex_abstention": false
+      },
+      "strict_improvement_impossible_on_cohort": false
+    },
+    "swarm": {
+      "passed": false,
+      "checks": {
+        "accuracy_at_least_baseline": true,
+        "fewer_complex_apex_misses": true,
+        "no_increase_severe_errors": true,
+        "no_complex_apex_abstention": false
+      },
+      "strict_improvement_impossible_on_cohort": false
+    }
+  },
+  "quality_goal_passed": false,
+  "predictions": [
+    {
+      "id": "N01",
+      "group_id": "gauge-v3-independent-01",
+      "expected": "trivial",
+      "candidate": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "previous": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "local": "moderate",
+      "swarm": "simple",
+      "elapsed_ms": 0.3397639999999882,
+      "assessment_abstained": true,
+      "original_expected": "trivial"
+    },
+    {
+      "id": "N02",
+      "group_id": "gauge-v3-independent-02",
+      "expected": "moderate",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.1652430000000038,
+      "assessment_abstained": false,
+      "original_expected": "moderate"
+    },
+    {
+      "id": "N03",
+      "group_id": "gauge-v3-independent-03",
+      "expected": "complex",
+      "candidate": {
+        "tier": "complex",
+        "reasons": [
+          "cross_boundary_change"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.05442899999999895,
+      "assessment_abstained": false,
+      "original_expected": "complex"
+    },
+    {
+      "id": "N04",
+      "group_id": "gauge-v3-independent-04",
+      "expected": "simple",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "simple",
+      "elapsed_ms": 0.07045700000000465,
+      "assessment_abstained": false,
+      "original_expected": "simple"
+    },
+    {
+      "id": "N05",
+      "group_id": "gauge-v3-independent-05",
+      "expected": "apex",
+      "candidate": {
+        "tier": "apex",
+        "reasons": [
+          "research_proof_obligations"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "apex",
+        "reasons": [
+          "research_proof_obligations"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.13421600000000922,
+      "assessment_abstained": false,
+      "original_expected": "apex"
+    },
+    {
+      "id": "N06",
+      "group_id": "gauge-v3-independent-06",
+      "expected": "simple",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "local": "moderate",
+      "swarm": "simple",
+      "elapsed_ms": 0.0696749999999895,
+      "assessment_abstained": false,
+      "original_expected": "simple"
+    },
+    {
+      "id": "N07",
+      "group_id": "gauge-v3-independent-07",
+      "expected": "apex",
+      "candidate": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "local": "moderate",
+      "swarm": "moderate",
+      "elapsed_ms": 0.0816679999999792,
+      "assessment_abstained": false,
+      "original_expected": "apex"
+    },
+    {
+      "id": "N08",
+      "group_id": "gauge-v3-independent-08",
+      "expected": "moderate",
+      "candidate": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.06779199999999719,
+      "assessment_abstained": false,
+      "original_expected": "moderate"
+    },
+    {
+      "id": "N09",
+      "group_id": "gauge-v3-independent-09",
+      "expected": "simple",
+      "candidate": {
+        "tier": "trivial",
+        "reasons": [
+          "bounded_lookup"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "local": "simple",
+      "swarm": "simple",
+      "elapsed_ms": 0.04095399999999927,
+      "assessment_abstained": false,
+      "original_expected": "trivial"
+    },
+    {
+      "id": "N10",
+      "group_id": "gauge-v3-independent-10",
+      "expected": "complex",
+      "candidate": {
+        "tier": "complex",
+        "reasons": [
+          "systemic_reasoning"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "complex",
+        "reasons": [
+          "systemic_reasoning"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.05628100000001268,
+      "assessment_abstained": false,
+      "original_expected": "complex"
+    },
+    {
+      "id": "N11",
+      "group_id": "gauge-v3-independent-11",
+      "expected": "apex",
+      "candidate": {
+        "tier": "apex",
+        "reasons": [
+          "research_proof_obligations"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "local": "moderate",
+      "swarm": "moderate",
+      "elapsed_ms": 0.040497000000016214,
+      "assessment_abstained": false,
+      "original_expected": "apex"
+    },
+    {
+      "id": "N12",
+      "group_id": "gauge-v3-independent-12",
+      "expected": "simple",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false
+      },
+      "local": "trivial",
+      "swarm": "simple",
+      "elapsed_ms": 0.13999699999999393,
+      "assessment_abstained": false,
+      "original_expected": "simple"
+    },
+    {
+      "id": "N13",
+      "group_id": "gauge-v3-independent-13",
+      "expected": "trivial",
+      "candidate": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "previous": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "local": "simple",
+      "swarm": "trivial",
+      "elapsed_ms": 0.06024899999999889,
+      "assessment_abstained": true,
+      "original_expected": "trivial"
+    },
+    {
+      "id": "N14",
+      "group_id": "gauge-v3-independent-14",
+      "expected": "complex",
+      "candidate": {
+        "tier": "complex",
+        "reasons": [
+          "cross_boundary_change"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "complex",
+        "reasons": [
+          "recovery_invariants"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.05099899999999025,
+      "assessment_abstained": false,
+      "original_expected": "complex"
+    },
+    {
+      "id": "N15",
+      "group_id": "gauge-v3-independent-15",
+      "expected": "moderate",
+      "candidate": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.09664800000001605,
+      "assessment_abstained": false,
+      "original_expected": "moderate"
+    },
+    {
+      "id": "N16",
+      "group_id": "gauge-v3-independent-16",
+      "expected": "trivial",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "local": "simple",
+      "swarm": "trivial",
+      "elapsed_ms": 0.09278100000000222,
+      "assessment_abstained": false,
+      "original_expected": "trivial"
+    },
+    {
+      "id": "N17",
+      "group_id": "gauge-v3-independent-17",
+      "expected": "moderate",
+      "candidate": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "local": "moderate",
+      "swarm": "moderate",
+      "elapsed_ms": 0.10478200000000015,
+      "assessment_abstained": false,
+      "original_expected": "moderate"
+    },
+    {
+      "id": "N18",
+      "group_id": "gauge-v3-independent-18",
+      "expected": "simple",
+      "candidate": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false
+      },
+      "local": "moderate",
+      "swarm": "simple",
+      "elapsed_ms": 0.08981299999999237,
+      "assessment_abstained": false,
+      "original_expected": "simple"
+    },
+    {
+      "id": "N19",
+      "group_id": "gauge-v3-independent-19",
+      "expected": "complex",
+      "candidate": {
+        "tier": "complex",
+        "reasons": [
+          "systemic_reasoning"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "complex",
+        "reasons": [
+          "systemic_reasoning"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.13850400000001173,
+      "assessment_abstained": false,
+      "original_expected": "complex"
+    },
+    {
+      "id": "N20",
+      "group_id": "gauge-v3-independent-20",
+      "expected": "apex",
+      "candidate": {
+        "tier": "apex",
+        "reasons": [
+          "research_proof_obligations"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "apex",
+        "reasons": [
+          "research_proof_obligations"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.055161999999995714,
+      "assessment_abstained": false,
+      "original_expected": "apex"
+    },
+    {
+      "id": "N21",
+      "group_id": "gauge-v3-independent-21",
+      "expected": "complex",
+      "candidate": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "previous": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.0857300000000123,
+      "assessment_abstained": true,
+      "original_expected": "complex"
+    },
+    {
+      "id": "N22",
+      "group_id": "gauge-v3-independent-22",
+      "expected": "trivial",
+      "candidate": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "previous": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "local": "moderate",
+      "swarm": "simple",
+      "elapsed_ms": 0.029923999999994066,
+      "assessment_abstained": true,
+      "original_expected": "trivial"
+    },
+    {
+      "id": "N23",
+      "group_id": "gauge-v3-independent-23",
+      "expected": "moderate",
+      "candidate": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.07485299999996187,
+      "assessment_abstained": false,
+      "original_expected": "moderate"
+    },
+    {
+      "id": "N24",
+      "group_id": "gauge-v3-independent-24",
+      "expected": "apex",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.08009699999996656,
+      "assessment_abstained": false,
+      "original_expected": "apex"
+    },
+    {
+      "id": "N25",
+      "group_id": "gauge-v3-independent-25",
+      "expected": "simple",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "simple",
+      "elapsed_ms": 0.15981399999998303,
+      "assessment_abstained": false,
+      "original_expected": "simple"
+    },
+    {
+      "id": "N26",
+      "group_id": "gauge-v3-independent-26",
+      "expected": "apex",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "local": "moderate",
+      "swarm": "moderate",
+      "elapsed_ms": 0.08863999999999805,
+      "assessment_abstained": false,
+      "original_expected": "apex"
+    },
+    {
+      "id": "N27",
+      "group_id": "gauge-v3-independent-27",
+      "expected": "moderate",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false
+      },
+      "local": "moderate",
+      "swarm": "simple",
+      "elapsed_ms": 0.04799400000001697,
+      "assessment_abstained": false,
+      "original_expected": "moderate"
+    },
+    {
+      "id": "N28",
+      "group_id": "gauge-v3-independent-28",
+      "expected": "trivial",
+      "candidate": {
+        "tier": "trivial",
+        "reasons": [
+          "bounded_lookup"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "local": "simple",
+      "swarm": "simple",
+      "elapsed_ms": 0.03697399999998652,
+      "assessment_abstained": false,
+      "original_expected": "trivial"
+    },
+    {
+      "id": "N29",
+      "group_id": "gauge-v3-independent-29",
+      "expected": "complex",
+      "candidate": {
+        "tier": "complex",
+        "reasons": [
+          "systemic_reasoning"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "complex",
+        "reasons": [
+          "systemic_reasoning"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.06768399999998564,
+      "assessment_abstained": false,
+      "original_expected": "complex"
+    },
+    {
+      "id": "N30",
+      "group_id": "gauge-v3-independent-30",
+      "expected": "simple",
+      "candidate": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "previous": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "local": "simple",
+      "swarm": "simple",
+      "elapsed_ms": 0.05993799999998828,
+      "assessment_abstained": true,
+      "original_expected": "simple"
+    },
+    {
+      "id": "N31",
+      "group_id": "gauge-v3-independent-31",
+      "expected": "simple",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "local": "moderate",
+      "swarm": "simple",
+      "elapsed_ms": 0.06260499999996227,
+      "assessment_abstained": false,
+      "original_expected": "simple"
+    },
+    {
+      "id": "N32",
+      "group_id": "gauge-v3-independent-32",
+      "expected": "complex",
+      "candidate": {
+        "tier": "complex",
+        "reasons": [
+          "cross_boundary_change"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "complex",
+        "reasons": [
+          "cross_boundary_change"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.05184499999995751,
+      "assessment_abstained": false,
+      "original_expected": "complex"
+    },
+    {
+      "id": "N33",
+      "group_id": "gauge-v3-independent-33",
+      "expected": "apex",
+      "candidate": {
+        "tier": "trivial",
+        "reasons": [
+          "bounded_lookup"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.05489599999998518,
+      "assessment_abstained": false,
+      "original_expected": "apex"
+    },
+    {
+      "id": "N34",
+      "group_id": "gauge-v3-independent-34",
+      "expected": "trivial",
+      "candidate": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "local": "simple",
+      "swarm": "trivial",
+      "elapsed_ms": 0.045099999999990814,
+      "assessment_abstained": false,
+      "original_expected": "trivial"
+    },
+    {
+      "id": "N35",
+      "group_id": "gauge-v3-independent-35",
+      "expected": "moderate",
+      "candidate": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "local": "moderate",
+      "swarm": "moderate",
+      "elapsed_ms": 0.07462500000002592,
+      "assessment_abstained": false,
+      "original_expected": "moderate"
+    },
+    {
+      "id": "N36",
+      "group_id": "gauge-v3-independent-36",
+      "expected": "simple",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "local": "moderate",
+      "swarm": "simple",
+      "elapsed_ms": 0.06026400000001786,
+      "assessment_abstained": false,
+      "original_expected": "simple"
+    },
+    {
+      "id": "N37",
+      "group_id": "gauge-v3-independent-37",
+      "expected": "trivial",
+      "candidate": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "previous": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true
+      },
+      "local": "simple",
+      "swarm": "simple",
+      "elapsed_ms": 0.0473840000000223,
+      "assessment_abstained": true,
+      "original_expected": "trivial"
+    },
+    {
+      "id": "N38",
+      "group_id": "gauge-v3-independent-38",
+      "expected": "moderate",
+      "candidate": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.05977300000000696,
+      "assessment_abstained": false,
+      "original_expected": "moderate"
+    },
+    {
+      "id": "N39",
+      "group_id": "gauge-v3-independent-39",
+      "expected": "apex",
+      "candidate": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false
+      },
+      "local": "moderate",
+      "swarm": "moderate",
+      "elapsed_ms": 0.072133000000008,
+      "assessment_abstained": false,
+      "original_expected": "apex"
+    },
+    {
+      "id": "N40",
+      "group_id": "gauge-v3-independent-40",
+      "expected": "complex",
+      "candidate": {
+        "tier": "complex",
+        "reasons": [
+          "cross_boundary_change"
+        ],
+        "abstained": false
+      },
+      "previous": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false
+      },
+      "local": "complex",
+      "swarm": "moderate",
+      "elapsed_ms": 0.07877000000007683,
+      "assessment_abstained": false,
+      "original_expected": "complex"
+    }
+  ]
+}

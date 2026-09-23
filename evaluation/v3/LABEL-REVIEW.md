@@ -1,8 +1,8 @@
 # Gauge v3 proposed-label review
 
-Status: all 40 labels are pending human review. No human has approved these labels. They are judgments proposed by a separate OpenAI Codex author agent, not human-reviewed ground truth or an independent vendor panel.
+Status: human review completed by marlandoj. All 40 decisions are resolved: 39 accepted and N09 corrected from trivial to simple. See [approval provenance and reviewed results](APPROVAL.md). The original proposed labels below remain preserved alongside the operator's decisions.
 
-The author received only the original evaluation contract and v3 preregistration as source material and did not inspect candidate code, development cohorts, prior predictions, or production prompts. All scenarios are synthetic. Unique texts and group IDs do not establish semantic independence. The human reviewer should assess the requested reasoning against the frozen rubric; no review decision is presumed here.
+The author received only the original evaluation contract and v3 preregistration as source material and did not inspect candidate code, development cohorts, prior predictions, or production prompts. All scenarios are synthetic. Unique texts and group IDs do not establish semantic independence. Human review occurred after results were disclosed; it does not constitute a new blinded evaluation or authorize promotion.
 
 ## N01
 
