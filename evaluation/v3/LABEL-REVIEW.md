@@ -8,7 +8,7 @@ The author received only the original evaluation contract and v3 preregistration
 
 - Group: `gauge-v3-independent-01`
 - Proposed tier: **trivial**
-- Human review: **PENDING — no approval**
+- Human review: ACCEPTED — trivial
 
 Task:
 
@@ -22,7 +22,7 @@ Subtracting two stated times is one elementary transformation with no design dec
 
 - Group: `gauge-v3-independent-02`
 - Proposed tier: **moderate**
-- Human review: **PENDING — no approval**
+- Human review: ACCEPTED — moderate
 
 Task:
 
@@ -36,7 +36,7 @@ The bounded export feature connects an established query, formatting behavior an
 
 - Group: `gauge-v3-independent-03`
 - Proposed tier: **complex**
-- Human review: **PENDING — no approval**
+- Human review: ACCEPTED — complex
 
 Task:
 
@@ -50,7 +50,7 @@ Several interacting systems require a migration and explicit offline, ordering a
 
 - Group: `gauge-v3-independent-04`
 - Proposed tier: **simple**
-- Human review: **PENDING — no approval**
+- Human review: ACCEPTED — simple
 
 Task:
 
@@ -64,7 +64,7 @@ This is an isolated familiar helper change with explicit outcomes for a few inpu
 
 - Group: `gauge-v3-independent-05`
 - Proposed tier: **apex**
-- Human review: **PENDING — no approval**
+- Human review: ACCEPTED — apex
 
 Task:
 
@@ -78,7 +78,7 @@ The requested result is a formal feasibility boundary involving privacy, collusi
 
 - Group: `gauge-v3-independent-06`
 - Proposed tier: **simple**
-- Human review: **PENDING — no approval**
+- Human review: ACCEPTED — simple
 
 Task:
 
@@ -92,7 +92,7 @@ One familiar component needs a localized interaction whose state and focus behav
 
 - Group: `gauge-v3-independent-07`
 - Proposed tier: **apex**
-- Human review: **PENDING — no approval**
+- Human review: ACCEPTED — apex
 
 Task:
 
@@ -106,7 +106,7 @@ Inventing formal semantics and establishing equivalence and decidability limits 
 
 - Group: `gauge-v3-independent-08`
 - Proposed tier: **moderate**
-- Human review: **PENDING — no approval**
+- Human review: ACCEPTED — moderate
 
 Task:
 
@@ -120,7 +120,7 @@ A bounded editing feature coordinates form state, validation, request state and 
 
 - Group: `gauge-v3-independent-09`
 - Proposed tier: **trivial**
-- Human review: **PENDING — no approval**
+- Human review: CORRECTED — simple — [reason:requires simple data parsing ]
 
 Task:
 
@@ -134,7 +134,7 @@ The requested time is directly present in the supplied schedule and requires onl
 
 - Group: `gauge-v3-independent-10`
 - Proposed tier: **complex**
-- Human review: **PENDING — no approval**
+- Human review: ACCEPTED — complex
 
 Task:
 
@@ -148,7 +148,7 @@ A live migration spans checkout, payment, storage and leases, with concurrency a
 
 - Group: `gauge-v3-independent-11`
 - Proposed tier: **apex**
-- Human review: **PENDING — no approval**
+- Human review: ACCEPTED — apex
 
 Task:
 
@@ -162,7 +162,7 @@ The task asks for algorithm research, formal resource and accuracy guarantees, a
 
 - Group: `gauge-v3-independent-12`
 - Proposed tier: **simple**
-- Human review: **PENDING — no approval**
+- Human review: ACCEPTED — simple
 
 Task:
 
@@ -176,7 +176,7 @@ Changing one known function's literal fallback is a localized implementation edi
 
 - Group: `gauge-v3-independent-13`
 - Proposed tier: **trivial**
-- Human review: **PENDING — no approval**
+- Human review: ACCEPTED — trivial
 
 Task:
 
@@ -190,7 +190,7 @@ Reversing a supplied six-character string is an elementary transformation.
 
 - Group: `gauge-v3-independent-14`
 - Proposed tier: **complex**
-- Human review: **PENDING — no approval**
+- Human review: ACCEPTED — complex
 
 Task:
 
