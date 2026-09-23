@@ -1,5 +1,5 @@
 {
-  "name": "@marlandoj/gauge", "version": "0.2.0", "private": true, "type": "module",
+  "name": "@marlandoj/gauge", "version": "0.3.0", "private": true, "type": "module",
   "description": "Local task assessment and seven-harness shadow model proposals",
   "scripts": {"test": "bun test tests evaluation/metrics.test.ts", "typecheck": "tsc --noEmit"},
   "devDependencies": {"@types/bun": "^1.3.0", "typescript": "^5.9.0"}

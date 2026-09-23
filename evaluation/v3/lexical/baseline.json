@@ -1,0 +1,922 @@
+[
+  {
+    "id": "gauge-v1-hex-conversion-1",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-hex-conversion-2",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-file-extension-1",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-file-extension-2",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-boolean-expression-1",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-boolean-expression-2",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-list-copy-1",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-list-copy-2",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-http-meaning-1",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-http-meaning-2",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-filename-from-path-1",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-filename-from-path-2",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-null-guard-1",
+    "tier": "simple",
+    "reasons": [
+      "bounded_operation"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-null-guard-2",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-unit-conversion-1",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-unit-conversion-2",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-readme-command-1",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-readme-command-2",
+    "tier": "simple",
+    "reasons": [
+      "bounded_operation"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-string-whitespace-1",
+    "tier": "simple",
+    "reasons": [
+      "bounded_operation"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-string-whitespace-2",
+    "tier": "simple",
+    "reasons": [
+      "bounded_operation"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-cli-option-1",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-cli-option-2",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-css-spacing-1",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-css-spacing-2",
+    "tier": "simple",
+    "reasons": [
+      "bounded_operation"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-pagination-1",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-pagination-2",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-csv-import-1",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-csv-import-2",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-reset-form-1",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-reset-form-2",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-cache-wrapper-1",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-cache-wrapper-2",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-log-parser-1",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-log-parser-2",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-upload-validation-1",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-upload-validation-2",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-tenant-migration-1",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-tenant-migration-2",
+    "tier": "complex",
+    "reasons": [
+      "cross_boundary_change"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-payment-idempotency-1",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-payment-idempotency-2",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-queue-backpressure-1",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-queue-backpressure-2",
+    "tier": "complex",
+    "reasons": [
+      "cross_boundary_change"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-offline-sync-1",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-offline-sync-2",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-identity-cutover-1",
+    "tier": "complex",
+    "reasons": [
+      "cross_boundary_change"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-identity-cutover-2",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-stream-recovery-1",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-stream-recovery-2",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-compiler-proof-1",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-compiler-proof-2",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-adaptive-scheduler-proof-1",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-adaptive-scheduler-proof-2",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-privacy-research-1",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-privacy-research-2",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-distributed-debugger-1",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-distributed-debugger-2",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-synthesis-verification-1",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-synthesis-verification-2",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-consensus-byzantine-1",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "gauge-v1-consensus-byzantine-2",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D01",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D02",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D03",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D04",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D05",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D06",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D07",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D08",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D09",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D10",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D11",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D12",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D13",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D14",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D15",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D16",
+    "tier": "complex",
+    "reasons": [
+      "recovery_invariants"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D17",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D18",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D19",
+    "tier": "complex",
+    "reasons": [
+      "recovery_invariants"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D20",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D21",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D22",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D23",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D24",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "D25",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H01",
+    "tier": null,
+    "reasons": [
+      "unrecognized_context"
+    ],
+    "abstained": true
+  },
+  {
+    "id": "H02",
+    "tier": "simple",
+    "reasons": [
+      "bounded_operation"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H03",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H04",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H05",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H06",
+    "tier": "trivial",
+    "reasons": [
+      "bounded_lookup"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H07",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H08",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H09",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H10",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H11",
+    "tier": null,
+    "reasons": [
+      "unrecognized_context"
+    ],
+    "abstained": true
+  },
+  {
+    "id": "H12",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H13",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H14",
+    "tier": "complex",
+    "reasons": [
+      "cross_boundary_change"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H15",
+    "tier": "apex",
+    "reasons": [
+      "research_proof_obligations"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H16",
+    "tier": null,
+    "reasons": [
+      "unrecognized_context"
+    ],
+    "abstained": true
+  },
+  {
+    "id": "H17",
+    "tier": "simple",
+    "reasons": [
+      "bounded_operation"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H18",
+    "tier": "simple",
+    "reasons": [
+      "bounded_operation"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H19",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H20",
+    "tier": null,
+    "reasons": [
+      "unrecognized_context"
+    ],
+    "abstained": true
+  },
+  {
+    "id": "H21",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H22",
+    "tier": "simple",
+    "reasons": [
+      "bounded_operation"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H23",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H24",
+    "tier": "moderate",
+    "reasons": [
+      "bounded_engineering"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H25",
+    "tier": "complex",
+    "reasons": [
+      "systemic_reasoning"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H26",
+    "tier": "simple",
+    "reasons": [
+      "bounded_operation"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H27",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H28",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H29",
+    "tier": "simple",
+    "reasons": [
+      "bounded_edit"
+    ],
+    "abstained": false
+  },
+  {
+    "id": "H30",
+    "tier": "simple",
+    "reasons": [
+      "bounded_operation"
+    ],
+    "abstained": false
+  }
+]

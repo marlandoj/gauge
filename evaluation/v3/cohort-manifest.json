@@ -1,0 +1,18 @@
+{
+  "author": "OpenAI Codex separate evaluation author agent /root/fresh_author",
+  "created_at": "2026-09-23T17:37:45Z",
+  "candidate_frozen_at": "2026-09-23T17:34:43.077Z",
+  "cohort_file": "cohort.json",
+  "sha256": "ca88152db08f7b12749a955ce822e149bd0cf2243bbed1b573174e857f6f5a97",
+  "cases": 40,
+  "groups": 40,
+  "tier_counts": {
+    "trivial": 8,
+    "simple": 8,
+    "moderate": 8,
+    "complex": 8,
+    "apex": 8
+  },
+  "human_reviewed": false,
+  "method": "A separately invoked OpenAI Codex evaluation author received only evaluation/PROTOCOL.md and evaluation/v3/PROTOCOL.md as evaluation source material. The author manually composed 40 fresh synthetic scenarios after the reported candidate freeze, spanning distinct domains, wording and request placements, and assigned proposed tiers and rationales from the frozen rubric. No candidate source, development examples, previous predictions, original holdout or production prompts were inspected; no classifier or tests were executed and no further agents were delegated. In-memory mechanical checks verified 40 unique IDs in N01–N40 order, 40 unique group IDs, 40 unique task texts and eight cases per tier. Files were created with shell noclobber protection; SHA-256 was computed over the exact cohort.json bytes. This is separate-author synthetic evidence, not human judgment or an independent vendor panel. The author shares the OpenAI Codex harness; operational task instructions and parent completion-status messaging were visible, but no candidate implementation, prior task examples or results were supplied. Text and group uniqueness cannot establish semantic independence. All labels remain pending explicit human review."
+}

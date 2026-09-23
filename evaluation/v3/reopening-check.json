@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "exit_code": 1,
+  "reason": "EEXIST: one-use receipt already exists",
+  "artifacts_unchanged": true,
+  "sha256": {
+    "candidate-freeze.json": "c136cf6ea358b106384a2ae679de2e05b2f879f552c410e70d6a7382d7e77db6",
+    "cohort.json": "ca88152db08f7b12749a955ce822e149bd0cf2243bbed1b573174e857f6f5a97",
+    "cohort-manifest.json": "91cd971d031217404303ce2f0230d8ff578fea8a9d202baa147bb8760237ac53",
+    "diagnostic-opened.json": "f23a4c1c7fd926cbed8b8ed68698ea083194dc33bee0ac09aedf555a77f475e6",
+    "results-diagnostic.json": "ec7a9856eb1aebb217b22552fa260cec6583294454d4ff4970363e1fa300e314"
+  }
+}

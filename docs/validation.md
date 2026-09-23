@@ -1,8 +1,12 @@
 # Validation — September 23, 2026
 
-## Current v2 disposition
+## Current v3 disposition
 
-V2 development, freeze, diagnostic scoring and mechanical checks are complete. Promotion is rejected. The [v2 report](../evaluation/v2/REPORT.md) records 15/30 fresh diagnostic accuracy, versus v1 13/30 on the same cases, all 67 tests passing with external fixtures enabled, and unchanged shadow routing. The original results below remain historical evidence. D01–D25 were explicitly approved and used for development; the fresh H01–H30 labels remain pending.
+The [v3 report](../evaluation/v3/REPORT.md) records 24/40 (60%) on fresh cases, versus archived v2 19/40 on the same inputs. The unchanged raw quality gate fails on a complex-task abstention; both separately reported fallback comparisons pass. Routing remains shadow-only. All 77 tests passed with external fixtures, and TypeScript passed. N01–N40 labels await human review. The sections below preserve earlier validation history.
+
+## Historical v2 disposition
+
+V2 development, freeze, diagnostic scoring and mechanical checks are complete. Promotion is rejected. The [v2 report](../evaluation/v2/REPORT.md) records 15/30 fresh diagnostic accuracy, versus v1 13/30 on the same cases, all 67 tests passing with external fixtures enabled, and unchanged shadow routing. D01–D25 were explicitly approved and used for development; H01–H30 were subsequently approved without corrections and became v3 development inputs.
 
 ## Development review follow-up
 

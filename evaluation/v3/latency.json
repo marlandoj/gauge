@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-09-23T17:35:41.993Z",
+  "samples": 20,
+  "bun": "1.3.12",
+  "host": "modal",
+  "platform": "linux",
+  "arch": "x64",
+  "scope": "Codex synthetic task; new process per call with warm filesystem cache, no discarded warmups; includes startup/imports/resolver and observer disk writes. No provider calls. Missing receipts include timeouts or write failures and are not silently excluded.",
+  "observations_completed": 20,
+  "observations_missing": 0,
+  "measurements": {
+    "fresh_process_cli": {
+      "samples": 20,
+      "p50_ms": 66.6226340000012,
+      "p95_ms": 75.88398400000005,
+      "min_ms": 62.8713340000013,
+      "max_ms": 6080.240364
+    },
+    "observer_fresh_worker": {
+      "samples": 20,
+      "p50_ms": 72.88185700000031,
+      "p95_ms": 80.96112300000004,
+      "min_ms": 67.08925200000002,
+      "max_ms": 81.9949630000001
+    }
+  }
+}
