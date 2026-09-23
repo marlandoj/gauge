@@ -1,0 +1,4536 @@
+{
+  "schema_version": 1,
+  "split": "heldout",
+  "generated_at": "2026-09-23T15:31:01.321Z",
+  "classifier_version": "gauge-0.1.0",
+  "provenance": {
+    "candidate_sha256": "bfe65579f7deb9f0087faca55f4ada6258676e8f6d1011b3b083a3133cd403e9",
+    "dataset_sha256": "5170b559cbd44b02010ef6afd85a183b4f90a2d2af5ce50a2fb48cd4f16a0013",
+    "manifest_sha256": "047fde27e178e3b0e5475608161408d67681425a7bb137f57baf1f8cbfde0cb5",
+    "local_baseline": {
+      "path": "/home/workspace/Skills/tier-resolver/scripts/persona-tier-resolve.ts",
+      "sha256": "9b342cfc2737be0174b318708db46582b07a99852b64eec1452b1e5ca50346ac",
+      "weights_sha256": "e6d39a847e4c89292d7bed27f2e2632e3b27bbfbc331e3477aee248fee0cd332"
+    },
+    "swarm_baseline": {
+      "path": "/tmp/zo-task-gauge-7_ezvv0o/packages/swarm/src/selector/executor-selector.ts",
+      "sha256": "98d2a2bb72dfe994cd04e9721eedbd0cd6c964ac6910a3ab24b5386b5b0067c0"
+    }
+  },
+  "metrics_five_tier": {
+    "candidate": {
+      "tier_space": "five-tier",
+      "total": 20,
+      "accuracy": 0.4,
+      "correct": 8,
+      "confusion": {
+        "trivial": {
+          "trivial": 2,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 2
+        },
+        "simple": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 1,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "moderate": {
+          "trivial": 0,
+          "simple": 1,
+          "moderate": 1,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 2
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 2,
+          "moderate": 1,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 1
+        },
+        "apex": {
+          "trivial": 0,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 1,
+          "apex": 2,
+          "abstain": 1
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 4,
+          "recall": 0.5,
+          "abstention": {
+            "count": 2,
+            "denominator": 4,
+            "rate": 0.5
+          }
+        },
+        "simple": {
+          "total": 4,
+          "recall": 0.75,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "moderate": {
+          "total": 4,
+          "recall": 0.25,
+          "abstention": {
+            "count": 2,
+            "denominator": 4,
+            "rate": 0.5
+          }
+        },
+        "complex": {
+          "total": 4,
+          "recall": 0,
+          "abstention": {
+            "count": 1,
+            "denominator": 4,
+            "rate": 0.25
+          }
+        },
+        "apex": {
+          "total": 4,
+          "recall": 0.5,
+          "abstention": {
+            "count": 1,
+            "denominator": 4,
+            "rate": 0.25
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 4,
+        "denominator": 8,
+        "rate": 0.5
+      },
+      "complex_apex_abstention": {
+        "count": 2,
+        "denominator": 8,
+        "rate": 0.25
+      },
+      "unnecessary_escalation": {
+        "count": 1,
+        "denominator": 20,
+        "rate": 0.05
+      },
+      "two_or_more_tier_errors": {
+        "count": 2,
+        "denominator": 20,
+        "rate": 0.1,
+        "upward": 0,
+        "downward": 2
+      },
+      "abstention": {
+        "count": 6,
+        "denominator": 20,
+        "rate": 0.3
+      },
+      "groups": {
+        "total": 10,
+        "exact": {
+          "count": 1,
+          "denominator": 10,
+          "rate": 0.1
+        },
+        "severe_error": {
+          "count": 2,
+          "denominator": 10,
+          "rate": 0.2
+        },
+        "complex_apex_under_routing": {
+          "count": 3,
+          "denominator": 10,
+          "rate": 0.3
+        },
+        "abstention": {
+          "count": 6,
+          "denominator": 10,
+          "rate": 0.6
+        }
+      }
+    },
+    "local": {
+      "tier_space": "five-tier",
+      "total": 20,
+      "accuracy": 0.25,
+      "correct": 5,
+      "confusion": {
+        "trivial": {
+          "trivial": 4,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "simple": {
+          "trivial": 3,
+          "simple": 1,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "moderate": {
+          "trivial": 1,
+          "simple": 3,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 2,
+          "moderate": 2,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "apex": {
+          "trivial": 0,
+          "simple": 1,
+          "moderate": 3,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 4,
+          "recall": 1,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "simple": {
+          "total": 4,
+          "recall": 0.25,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "moderate": {
+          "total": 4,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "complex": {
+          "total": 4,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "apex": {
+          "total": 4,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 8,
+        "denominator": 8,
+        "rate": 1
+      },
+      "complex_apex_abstention": {
+        "count": 0,
+        "denominator": 8,
+        "rate": 0
+      },
+      "unnecessary_escalation": {
+        "count": 0,
+        "denominator": 20,
+        "rate": 0
+      },
+      "two_or_more_tier_errors": {
+        "count": 7,
+        "denominator": 20,
+        "rate": 0.35,
+        "upward": 0,
+        "downward": 7
+      },
+      "abstention": {
+        "count": 0,
+        "denominator": 20,
+        "rate": 0
+      },
+      "groups": {
+        "total": 10,
+        "exact": {
+          "count": 2,
+          "denominator": 10,
+          "rate": 0.2
+        },
+        "severe_error": {
+          "count": 5,
+          "denominator": 10,
+          "rate": 0.5
+        },
+        "complex_apex_under_routing": {
+          "count": 4,
+          "denominator": 10,
+          "rate": 0.4
+        },
+        "abstention": {
+          "count": 0,
+          "denominator": 10,
+          "rate": 0
+        }
+      }
+    },
+    "swarm": {
+      "tier_space": "five-tier",
+      "total": 20,
+      "accuracy": 0.2,
+      "correct": 4,
+      "confusion": {
+        "trivial": {
+          "trivial": 4,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "simple": {
+          "trivial": 4,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "moderate": {
+          "trivial": 0,
+          "simple": 4,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 4,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "apex": {
+          "trivial": 0,
+          "simple": 4,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 4,
+          "recall": 1,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "simple": {
+          "total": 4,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "moderate": {
+          "total": 4,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "complex": {
+          "total": 4,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "apex": {
+          "total": 4,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 8,
+        "denominator": 8,
+        "rate": 1
+      },
+      "complex_apex_abstention": {
+        "count": 0,
+        "denominator": 8,
+        "rate": 0
+      },
+      "unnecessary_escalation": {
+        "count": 0,
+        "denominator": 20,
+        "rate": 0
+      },
+      "two_or_more_tier_errors": {
+        "count": 8,
+        "denominator": 20,
+        "rate": 0.4,
+        "upward": 0,
+        "downward": 8
+      },
+      "abstention": {
+        "count": 0,
+        "denominator": 20,
+        "rate": 0
+      },
+      "groups": {
+        "total": 10,
+        "exact": {
+          "count": 2,
+          "denominator": 10,
+          "rate": 0.2
+        },
+        "severe_error": {
+          "count": 4,
+          "denominator": 10,
+          "rate": 0.4
+        },
+        "complex_apex_under_routing": {
+          "count": 4,
+          "denominator": 10,
+          "rate": 0.4
+        },
+        "abstention": {
+          "count": 0,
+          "denominator": 10,
+          "rate": 0
+        }
+      }
+    },
+    "candidate_fallback_local": {
+      "tier_space": "five-tier",
+      "total": 20,
+      "accuracy": 0.5,
+      "correct": 10,
+      "confusion": {
+        "trivial": {
+          "trivial": 4,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "simple": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 1,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "moderate": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 1,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 1,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "apex": {
+          "trivial": 0,
+          "simple": 1,
+          "moderate": 0,
+          "complex": 1,
+          "apex": 2,
+          "abstain": 0
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 4,
+          "recall": 1,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "simple": {
+          "total": 4,
+          "recall": 0.75,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "moderate": {
+          "total": 4,
+          "recall": 0.25,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "complex": {
+          "total": 4,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "apex": {
+          "total": 4,
+          "recall": 0.5,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 6,
+        "denominator": 8,
+        "rate": 0.75
+      },
+      "complex_apex_abstention": {
+        "count": 0,
+        "denominator": 8,
+        "rate": 0
+      },
+      "unnecessary_escalation": {
+        "count": 1,
+        "denominator": 20,
+        "rate": 0.05
+      },
+      "two_or_more_tier_errors": {
+        "count": 4,
+        "denominator": 20,
+        "rate": 0.2,
+        "upward": 0,
+        "downward": 4
+      },
+      "abstention": {
+        "count": 0,
+        "denominator": 20,
+        "rate": 0
+      },
+      "groups": {
+        "total": 10,
+        "exact": {
+          "count": 3,
+          "denominator": 10,
+          "rate": 0.3
+        },
+        "severe_error": {
+          "count": 3,
+          "denominator": 10,
+          "rate": 0.3
+        },
+        "complex_apex_under_routing": {
+          "count": 4,
+          "denominator": 10,
+          "rate": 0.4
+        },
+        "abstention": {
+          "count": 0,
+          "denominator": 10,
+          "rate": 0
+        }
+      }
+    },
+    "candidate_fallback_swarm": {
+      "tier_space": "five-tier",
+      "total": 20,
+      "accuracy": 0.5,
+      "correct": 10,
+      "confusion": {
+        "trivial": {
+          "trivial": 4,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "simple": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 1,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "moderate": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 1,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 1,
+          "complex": 0,
+          "apex": 0,
+          "abstain": 0
+        },
+        "apex": {
+          "trivial": 0,
+          "simple": 1,
+          "moderate": 0,
+          "complex": 1,
+          "apex": 2,
+          "abstain": 0
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 4,
+          "recall": 1,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "simple": {
+          "total": 4,
+          "recall": 0.75,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "moderate": {
+          "total": 4,
+          "recall": 0.25,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "complex": {
+          "total": 4,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "apex": {
+          "total": 4,
+          "recall": 0.5,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 6,
+        "denominator": 8,
+        "rate": 0.75
+      },
+      "complex_apex_abstention": {
+        "count": 0,
+        "denominator": 8,
+        "rate": 0
+      },
+      "unnecessary_escalation": {
+        "count": 1,
+        "denominator": 20,
+        "rate": 0.05
+      },
+      "two_or_more_tier_errors": {
+        "count": 4,
+        "denominator": 20,
+        "rate": 0.2,
+        "upward": 0,
+        "downward": 4
+      },
+      "abstention": {
+        "count": 0,
+        "denominator": 20,
+        "rate": 0
+      },
+      "groups": {
+        "total": 10,
+        "exact": {
+          "count": 3,
+          "denominator": 10,
+          "rate": 0.3
+        },
+        "severe_error": {
+          "count": 3,
+          "denominator": 10,
+          "rate": 0.3
+        },
+        "complex_apex_under_routing": {
+          "count": 4,
+          "denominator": 10,
+          "rate": 0.4
+        },
+        "abstention": {
+          "count": 0,
+          "denominator": 10,
+          "rate": 0
+        }
+      }
+    }
+  },
+  "metrics_four_tier_boundary_normalized": {
+    "candidate": {
+      "tier_space": "four-tier-boundary-normalized",
+      "total": 20,
+      "accuracy": 0.45,
+      "correct": 9,
+      "confusion": {
+        "trivial": {
+          "trivial": 2,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 0,
+          "abstain": 2
+        },
+        "simple": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 1,
+          "complex": 0,
+          "abstain": 0
+        },
+        "moderate": {
+          "trivial": 0,
+          "simple": 1,
+          "moderate": 1,
+          "complex": 0,
+          "abstain": 2
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 2,
+          "moderate": 1,
+          "complex": 3,
+          "abstain": 2
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 4,
+          "recall": 0.5,
+          "abstention": {
+            "count": 2,
+            "denominator": 4,
+            "rate": 0.5
+          }
+        },
+        "simple": {
+          "total": 4,
+          "recall": 0.75,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "moderate": {
+          "total": 4,
+          "recall": 0.25,
+          "abstention": {
+            "count": 2,
+            "denominator": 4,
+            "rate": 0.5
+          }
+        },
+        "complex": {
+          "total": 8,
+          "recall": 0.375,
+          "abstention": {
+            "count": 2,
+            "denominator": 8,
+            "rate": 0.25
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 3,
+        "denominator": 8,
+        "rate": 0.375
+      },
+      "complex_apex_abstention": {
+        "count": 2,
+        "denominator": 8,
+        "rate": 0.25
+      },
+      "unnecessary_escalation": {
+        "count": 1,
+        "denominator": 20,
+        "rate": 0.05
+      },
+      "two_or_more_tier_errors": {
+        "count": 2,
+        "denominator": 20,
+        "rate": 0.1,
+        "upward": 0,
+        "downward": 2
+      },
+      "abstention": {
+        "count": 6,
+        "denominator": 20,
+        "rate": 0.3
+      },
+      "groups": {
+        "total": 10,
+        "exact": {
+          "count": 2,
+          "denominator": 10,
+          "rate": 0.2
+        },
+        "severe_error": {
+          "count": 2,
+          "denominator": 10,
+          "rate": 0.2
+        },
+        "complex_apex_under_routing": {
+          "count": 2,
+          "denominator": 10,
+          "rate": 0.2
+        },
+        "abstention": {
+          "count": 6,
+          "denominator": 10,
+          "rate": 0.6
+        }
+      }
+    },
+    "local": {
+      "tier_space": "four-tier-boundary-normalized",
+      "total": 20,
+      "accuracy": 0.25,
+      "correct": 5,
+      "confusion": {
+        "trivial": {
+          "trivial": 4,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 0,
+          "abstain": 0
+        },
+        "simple": {
+          "trivial": 3,
+          "simple": 1,
+          "moderate": 0,
+          "complex": 0,
+          "abstain": 0
+        },
+        "moderate": {
+          "trivial": 1,
+          "simple": 3,
+          "moderate": 0,
+          "complex": 0,
+          "abstain": 0
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 5,
+          "complex": 0,
+          "abstain": 0
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 4,
+          "recall": 1,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "simple": {
+          "total": 4,
+          "recall": 0.25,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "moderate": {
+          "total": 4,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "complex": {
+          "total": 8,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 8,
+            "rate": 0
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 8,
+        "denominator": 8,
+        "rate": 1
+      },
+      "complex_apex_abstention": {
+        "count": 0,
+        "denominator": 8,
+        "rate": 0
+      },
+      "unnecessary_escalation": {
+        "count": 0,
+        "denominator": 20,
+        "rate": 0
+      },
+      "two_or_more_tier_errors": {
+        "count": 4,
+        "denominator": 20,
+        "rate": 0.2,
+        "upward": 0,
+        "downward": 4
+      },
+      "abstention": {
+        "count": 0,
+        "denominator": 20,
+        "rate": 0
+      },
+      "groups": {
+        "total": 10,
+        "exact": {
+          "count": 2,
+          "denominator": 10,
+          "rate": 0.2
+        },
+        "severe_error": {
+          "count": 4,
+          "denominator": 10,
+          "rate": 0.4
+        },
+        "complex_apex_under_routing": {
+          "count": 4,
+          "denominator": 10,
+          "rate": 0.4
+        },
+        "abstention": {
+          "count": 0,
+          "denominator": 10,
+          "rate": 0
+        }
+      }
+    },
+    "swarm": {
+      "tier_space": "four-tier-boundary-normalized",
+      "total": 20,
+      "accuracy": 0.2,
+      "correct": 4,
+      "confusion": {
+        "trivial": {
+          "trivial": 4,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 0,
+          "abstain": 0
+        },
+        "simple": {
+          "trivial": 4,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 0,
+          "abstain": 0
+        },
+        "moderate": {
+          "trivial": 0,
+          "simple": 4,
+          "moderate": 0,
+          "complex": 0,
+          "abstain": 0
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 8,
+          "moderate": 0,
+          "complex": 0,
+          "abstain": 0
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 4,
+          "recall": 1,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "simple": {
+          "total": 4,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "moderate": {
+          "total": 4,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "complex": {
+          "total": 8,
+          "recall": 0,
+          "abstention": {
+            "count": 0,
+            "denominator": 8,
+            "rate": 0
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 8,
+        "denominator": 8,
+        "rate": 1
+      },
+      "complex_apex_abstention": {
+        "count": 0,
+        "denominator": 8,
+        "rate": 0
+      },
+      "unnecessary_escalation": {
+        "count": 0,
+        "denominator": 20,
+        "rate": 0
+      },
+      "two_or_more_tier_errors": {
+        "count": 8,
+        "denominator": 20,
+        "rate": 0.4,
+        "upward": 0,
+        "downward": 8
+      },
+      "abstention": {
+        "count": 0,
+        "denominator": 20,
+        "rate": 0
+      },
+      "groups": {
+        "total": 10,
+        "exact": {
+          "count": 2,
+          "denominator": 10,
+          "rate": 0.2
+        },
+        "severe_error": {
+          "count": 4,
+          "denominator": 10,
+          "rate": 0.4
+        },
+        "complex_apex_under_routing": {
+          "count": 4,
+          "denominator": 10,
+          "rate": 0.4
+        },
+        "abstention": {
+          "count": 0,
+          "denominator": 10,
+          "rate": 0
+        }
+      }
+    },
+    "candidate_fallback_local": {
+      "tier_space": "four-tier-boundary-normalized",
+      "total": 20,
+      "accuracy": 0.55,
+      "correct": 11,
+      "confusion": {
+        "trivial": {
+          "trivial": 4,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 0,
+          "abstain": 0
+        },
+        "simple": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 1,
+          "complex": 0,
+          "abstain": 0
+        },
+        "moderate": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 1,
+          "complex": 0,
+          "abstain": 0
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 4,
+          "moderate": 1,
+          "complex": 3,
+          "abstain": 0
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 4,
+          "recall": 1,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "simple": {
+          "total": 4,
+          "recall": 0.75,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "moderate": {
+          "total": 4,
+          "recall": 0.25,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "complex": {
+          "total": 8,
+          "recall": 0.375,
+          "abstention": {
+            "count": 0,
+            "denominator": 8,
+            "rate": 0
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 5,
+        "denominator": 8,
+        "rate": 0.625
+      },
+      "complex_apex_abstention": {
+        "count": 0,
+        "denominator": 8,
+        "rate": 0
+      },
+      "unnecessary_escalation": {
+        "count": 1,
+        "denominator": 20,
+        "rate": 0.05
+      },
+      "two_or_more_tier_errors": {
+        "count": 4,
+        "denominator": 20,
+        "rate": 0.2,
+        "upward": 0,
+        "downward": 4
+      },
+      "abstention": {
+        "count": 0,
+        "denominator": 20,
+        "rate": 0
+      },
+      "groups": {
+        "total": 10,
+        "exact": {
+          "count": 4,
+          "denominator": 10,
+          "rate": 0.4
+        },
+        "severe_error": {
+          "count": 3,
+          "denominator": 10,
+          "rate": 0.3
+        },
+        "complex_apex_under_routing": {
+          "count": 3,
+          "denominator": 10,
+          "rate": 0.3
+        },
+        "abstention": {
+          "count": 0,
+          "denominator": 10,
+          "rate": 0
+        }
+      }
+    },
+    "candidate_fallback_swarm": {
+      "tier_space": "four-tier-boundary-normalized",
+      "total": 20,
+      "accuracy": 0.55,
+      "correct": 11,
+      "confusion": {
+        "trivial": {
+          "trivial": 4,
+          "simple": 0,
+          "moderate": 0,
+          "complex": 0,
+          "abstain": 0
+        },
+        "simple": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 1,
+          "complex": 0,
+          "abstain": 0
+        },
+        "moderate": {
+          "trivial": 0,
+          "simple": 3,
+          "moderate": 1,
+          "complex": 0,
+          "abstain": 0
+        },
+        "complex": {
+          "trivial": 0,
+          "simple": 4,
+          "moderate": 1,
+          "complex": 3,
+          "abstain": 0
+        }
+      },
+      "per_tier": {
+        "trivial": {
+          "total": 4,
+          "recall": 1,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "simple": {
+          "total": 4,
+          "recall": 0.75,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "moderate": {
+          "total": 4,
+          "recall": 0.25,
+          "abstention": {
+            "count": 0,
+            "denominator": 4,
+            "rate": 0
+          }
+        },
+        "complex": {
+          "total": 8,
+          "recall": 0.375,
+          "abstention": {
+            "count": 0,
+            "denominator": 8,
+            "rate": 0
+          }
+        }
+      },
+      "complex_apex_under_routing": {
+        "count": 5,
+        "denominator": 8,
+        "rate": 0.625
+      },
+      "complex_apex_abstention": {
+        "count": 0,
+        "denominator": 8,
+        "rate": 0
+      },
+      "unnecessary_escalation": {
+        "count": 1,
+        "denominator": 20,
+        "rate": 0.05
+      },
+      "two_or_more_tier_errors": {
+        "count": 4,
+        "denominator": 20,
+        "rate": 0.2,
+        "upward": 0,
+        "downward": 4
+      },
+      "abstention": {
+        "count": 0,
+        "denominator": 20,
+        "rate": 0
+      },
+      "groups": {
+        "total": 10,
+        "exact": {
+          "count": 4,
+          "denominator": 10,
+          "rate": 0.4
+        },
+        "severe_error": {
+          "count": 3,
+          "denominator": 10,
+          "rate": 0.3
+        },
+        "complex_apex_under_routing": {
+          "count": 3,
+          "denominator": 10,
+          "rate": 0.3
+        },
+        "abstention": {
+          "count": 0,
+          "denominator": 10,
+          "rate": 0
+        }
+      }
+    }
+  },
+  "acceptance": {
+    "local": {
+      "passed": false,
+      "checks": {
+        "accuracy_at_least_baseline": true,
+        "fewer_complex_apex_misses": true,
+        "no_increase_severe_errors": true,
+        "no_complex_apex_abstention": false
+      },
+      "strict_improvement_impossible_on_cohort": false
+    },
+    "swarm": {
+      "passed": false,
+      "checks": {
+        "accuracy_at_least_baseline": true,
+        "fewer_complex_apex_misses": true,
+        "no_increase_severe_errors": true,
+        "no_complex_apex_abstention": false
+      },
+      "strict_improvement_impossible_on_cohort": false
+    },
+    "fallback_local": {
+      "passed": true,
+      "checks": {
+        "accuracy_at_least_baseline": true,
+        "fewer_complex_apex_misses": true,
+        "no_increase_severe_errors": true,
+        "no_complex_apex_abstention": true
+      },
+      "strict_improvement_impossible_on_cohort": false
+    },
+    "fallback_swarm": {
+      "passed": true,
+      "checks": {
+        "accuracy_at_least_baseline": true,
+        "fewer_complex_apex_misses": true,
+        "no_increase_severe_errors": true,
+        "no_complex_apex_abstention": true
+      },
+      "strict_improvement_impossible_on_cohort": false
+    }
+  },
+  "candidate_quality_goal_passed": false,
+  "production_promotion_authorized": false,
+  "latency": {
+    "warm": {
+      "classifier": {
+        "samples": 20,
+        "p50_ms": 0.025216999999997824,
+        "p95_ms": 0.08194000000000301,
+        "min_ms": 0.013615999999998962,
+        "max_ms": 0.1464770000000044
+      },
+      "local_baseline": {
+        "samples": 20,
+        "p50_ms": 5.088339999999988,
+        "p95_ms": 7.164691000000005,
+        "min_ms": 2.278657999999993,
+        "max_ms": 8.470304999999996
+      },
+      "swarm_baseline": {
+        "samples": 20,
+        "p50_ms": 0.0027180000000015525,
+        "p95_ms": 0.00903699999999219,
+        "min_ms": 0.0012289999999950396,
+        "max_ms": 0.02686599999999828
+      },
+      "assessment": {
+        "samples": 20,
+        "p50_ms": 0.6494869999999935,
+        "p95_ms": 0.9783740000000023,
+        "min_ms": 0.026499999999998636,
+        "max_ms": 1.7626010000000036
+      }
+    },
+    "cold": {
+      "measured": false,
+      "reason": "Separate process measurement required; parent integration records this."
+    },
+    "environment": {
+      "hostname": "modal",
+      "platform": "linux",
+      "arch": "x64",
+      "bun": "1.3.12"
+    },
+    "scope": "One warmup per production path. Assessment includes HMAC and configured real resolver, excludes module loading and receipt disk writes. No CLI or cold-process latency claim."
+  },
+  "parity": {
+    "same_classifier_export": true,
+    "assessment_proposed_tier_matches": true,
+    "assessment_harness": "codex",
+    "resolver_root": "/tmp/zo-task-gauge-7_ezvv0o/packages/swarm"
+  },
+  "limitation": "Agent-authored synthetic labels; paired paraphrases are correlated. Shadow routes remain unchanged regardless of scores.",
+  "predictions": [
+    {
+      "id": "gauge-v1-print-working-directory-1",
+      "group_id": "gauge-v1-print-working-directory",
+      "expected": "trivial",
+      "candidate": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true,
+        "measured_elapsed_ms": 0.029768000000004236
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "trivial",
+          "score": 0.036,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 10,
+              "normalizedScore": 0.06666666666666667,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 1,
+              "normalizedScore": 0.16666666666666666,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 1,
+              "normalizedScore": 0.25,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "review",
+          "semanticMatch": {
+            "taskType": "review",
+            "confidence": 0.3,
+            "matchMethod": "keyword",
+            "evidenceTokens": [
+              "pr"
+            ]
+          },
+          "domainPattern": {
+            "domain": "review",
+            "subdomain": null,
+            "techStack": [],
+            "complexityModifier": 1
+          },
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 10,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "trivial",
+        "measured_elapsed_ms": 7.164691000000005
+      },
+      "swarm_baseline": {
+        "tier": "trivial",
+        "measured_elapsed_ms": 0.02686599999999828
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "e6b2146c51e7c57b0cf5a87b3196fcc5d2db5c63e72f21039222721a5394b32b",
+        "harness": "codex",
+        "baseline_tier": "trivial",
+        "proposed_tier": null,
+        "proposed_route": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true,
+        "elapsed_ms": 0.041010999999997466,
+        "measured_elapsed_ms": 0.04697299999999416
+      }
+    },
+    {
+      "id": "gauge-v1-print-working-directory-2",
+      "group_id": "gauge-v1-print-working-directory",
+      "expected": "trivial",
+      "candidate": {
+        "tier": "trivial",
+        "reasons": [
+          "bounded_lookup"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.08194000000000301
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "trivial",
+          "score": 0.0021333333333333334,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 9,
+              "normalizedScore": 0.05333333333333334,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "general",
+          "semanticMatch": {
+            "taskType": "general",
+            "confidence": 0,
+            "matchMethod": "keyword",
+            "evidenceTokens": []
+          },
+          "domainPattern": null,
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 9,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "trivial",
+        "measured_elapsed_ms": 5.9542
+      },
+      "swarm_baseline": {
+        "tier": "trivial",
+        "measured_elapsed_ms": 0.0027180000000015525
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "bdbe864054f201f1a25663ad161d578595eef12963f8bb3b8fdcbed2ffcd093b",
+        "harness": "codex",
+        "baseline_tier": "trivial",
+        "proposed_tier": "trivial",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-luna",
+          "tier": "trivial",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "bounded_lookup"
+        ],
+        "abstained": false,
+        "elapsed_ms": 1.756487000000007,
+        "measured_elapsed_ms": 1.7626010000000036
+      }
+    },
+    {
+      "id": "gauge-v1-json-count-1",
+      "group_id": "gauge-v1-json-count",
+      "expected": "trivial",
+      "candidate": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true,
+        "measured_elapsed_ms": 0.1464770000000044
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "trivial",
+          "score": 0.0032,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 11,
+              "normalizedScore": 0.08,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "general",
+          "semanticMatch": {
+            "taskType": "general",
+            "confidence": 0,
+            "matchMethod": "keyword",
+            "evidenceTokens": []
+          },
+          "domainPattern": null,
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 11,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "trivial",
+        "measured_elapsed_ms": 6.4443609999999865
+      },
+      "swarm_baseline": {
+        "tier": "trivial",
+        "measured_elapsed_ms": 0.00903699999999219
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "583eb93a39c2567a69c9e2e36288ac532f12cd89e8e177f140ccd88626c9cb55",
+        "harness": "codex",
+        "baseline_tier": "trivial",
+        "proposed_tier": null,
+        "proposed_route": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true,
+        "elapsed_ms": 0.16729500000000996,
+        "measured_elapsed_ms": 0.17848299999999995
+      }
+    },
+    {
+      "id": "gauge-v1-json-count-2",
+      "group_id": "gauge-v1-json-count",
+      "expected": "trivial",
+      "candidate": {
+        "tier": "trivial",
+        "reasons": [
+          "bounded_lookup"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.034826999999992836
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "trivial",
+          "score": 0.0010666666666666667,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 7,
+              "normalizedScore": 0.02666666666666667,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "general",
+          "semanticMatch": {
+            "taskType": "general",
+            "confidence": 0,
+            "matchMethod": "keyword",
+            "evidenceTokens": []
+          },
+          "domainPattern": null,
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 7,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "trivial",
+        "measured_elapsed_ms": 4.979551000000001
+      },
+      "swarm_baseline": {
+        "tier": "trivial",
+        "measured_elapsed_ms": 0.0023589999999984457
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "56e3602559df22966e76451e6173ffbd87f1c7074735edb01b8104ae12c19dbc",
+        "harness": "codex",
+        "baseline_tier": "trivial",
+        "proposed_tier": "trivial",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-luna",
+          "tier": "trivial",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "bounded_lookup"
+        ],
+        "abstained": false,
+        "elapsed_ms": 0.937578000000002,
+        "measured_elapsed_ms": 0.941046
+      }
+    },
+    {
+      "id": "gauge-v1-button-label-1",
+      "group_id": "gauge-v1-button-label",
+      "expected": "simple",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.029683000000005677
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "simple",
+          "score": 0.07253333333333334,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 16,
+              "normalizedScore": 0.14666666666666667,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 2,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "general",
+          "semanticMatch": {
+            "taskType": "general",
+            "confidence": 0,
+            "matchMethod": "keyword",
+            "evidenceTokens": []
+          },
+          "domainPattern": null,
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 16,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "simple",
+        "measured_elapsed_ms": 8.470304999999996
+      },
+      "swarm_baseline": {
+        "tier": "trivial",
+        "measured_elapsed_ms": 0.007570999999998662
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "0f521662301b52a49ab686108811e10b02988e3d9c903a6cb624dab910783a86",
+        "harness": "codex",
+        "baseline_tier": "trivial",
+        "proposed_tier": "simple",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-luna",
+          "tier": "simple",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false,
+        "elapsed_ms": 0.9707159999999959,
+        "measured_elapsed_ms": 0.9783740000000023
+      }
+    },
+    {
+      "id": "gauge-v1-button-label-2",
+      "group_id": "gauge-v1-button-label",
+      "expected": "simple",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.013615999999998962
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "trivial",
+          "score": 0.0037333333333333337,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 12,
+              "normalizedScore": 0.09333333333333334,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "general",
+          "semanticMatch": {
+            "taskType": "general",
+            "confidence": 0,
+            "matchMethod": "keyword",
+            "evidenceTokens": []
+          },
+          "domainPattern": null,
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 12,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "trivial",
+        "measured_elapsed_ms": 5.863464000000008
+      },
+      "swarm_baseline": {
+        "tier": "trivial",
+        "measured_elapsed_ms": 0.004368999999996959
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "5c5234eb629d18f65bdc3e01e20beabe476e72be3e50d5501d3b4f7df8055e00",
+        "harness": "codex",
+        "baseline_tier": "trivial",
+        "proposed_tier": "simple",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-luna",
+          "tier": "simple",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false,
+        "elapsed_ms": 0.7746069999999889,
+        "measured_elapsed_ms": 0.7777130000000056
+      }
+    },
+    {
+      "id": "gauge-v1-sort-helper-1",
+      "group_id": "gauge-v1-sort-helper",
+      "expected": "simple",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.03222499999999684
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "trivial",
+          "score": 0.02926666666666667,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 13,
+              "normalizedScore": 0.10666666666666667,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 1,
+              "normalizedScore": 0.25,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 2,
+              "normalizedScore": 0.5,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "coding",
+          "semanticMatch": {
+            "taskType": "coding",
+            "confidence": 0.5,
+            "matchMethod": "synonym",
+            "evidenceTokens": [
+              "write",
+              "write"
+            ]
+          },
+          "domainPattern": {
+            "domain": "coding",
+            "subdomain": null,
+            "techStack": [],
+            "complexityModifier": 1
+          },
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 13,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "trivial",
+        "measured_elapsed_ms": 5.5974629999999905
+      },
+      "swarm_baseline": {
+        "tier": "trivial",
+        "measured_elapsed_ms": 0.004187999999999192
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "13684d57458826effa0f9a742c9b19c5a2bd26aa9a10fe58292cbeb13a14c6cd",
+        "harness": "codex",
+        "baseline_tier": "trivial",
+        "proposed_tier": "simple",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-luna",
+          "tier": "simple",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "bounded_edit"
+        ],
+        "abstained": false,
+        "elapsed_ms": 0.8375810000000001,
+        "measured_elapsed_ms": 0.8437399999999968
+      }
+    },
+    {
+      "id": "gauge-v1-sort-helper-2",
+      "group_id": "gauge-v1-sort-helper",
+      "expected": "simple",
+      "candidate": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.035649999999989745
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "trivial",
+          "score": 0.027133333333333336,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 9,
+              "normalizedScore": 0.05333333333333334,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 1,
+              "normalizedScore": 0.25,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 2,
+              "normalizedScore": 0.5,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "coding",
+          "semanticMatch": {
+            "taskType": "coding",
+            "confidence": 0.5,
+            "matchMethod": "synonym",
+            "evidenceTokens": [
+              "implement",
+              "implement"
+            ]
+          },
+          "domainPattern": {
+            "domain": "coding",
+            "subdomain": null,
+            "techStack": [],
+            "complexityModifier": 1
+          },
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 9,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "trivial",
+        "measured_elapsed_ms": 2.278657999999993
+      },
+      "swarm_baseline": {
+        "tier": "trivial",
+        "measured_elapsed_ms": 0.0016339999999956945
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "3c62029d7fcfd876496043e5b0b8fc718d742d0c47b3936d1a75dcc9714f84a2",
+        "harness": "codex",
+        "baseline_tier": "trivial",
+        "proposed_tier": "moderate",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-sol",
+          "tier": "moderate",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false,
+        "elapsed_ms": 0.6344820000000055,
+        "measured_elapsed_ms": 0.6378389999999996
+      }
+    },
+    {
+      "id": "gauge-v1-settings-storage-1",
+      "group_id": "gauge-v1-settings-storage",
+      "expected": "moderate",
+      "candidate": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true,
+        "measured_elapsed_ms": 0.020827999999994518
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "simple",
+          "score": 0.1048,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 14,
+              "normalizedScore": 0.12,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 1,
+              "normalizedScore": 0.16666666666666666,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 2,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 2,
+              "normalizedScore": 0.5,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "general",
+          "semanticMatch": {
+            "taskType": "general",
+            "confidence": 0,
+            "matchMethod": "keyword",
+            "evidenceTokens": []
+          },
+          "domainPattern": null,
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 14,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "simple",
+        "measured_elapsed_ms": 3.634713000000005
+      },
+      "swarm_baseline": {
+        "tier": "simple",
+        "measured_elapsed_ms": 0.0014170000000035543
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "7d7c22d1c7d404c82318dfa510e30e42807ee8ebda16c5bcddf7eae83ec3d315",
+        "harness": "codex",
+        "baseline_tier": "simple",
+        "proposed_tier": null,
+        "proposed_route": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true,
+        "elapsed_ms": 0.024653000000000702,
+        "measured_elapsed_ms": 0.026499999999998636
+      }
+    },
+    {
+      "id": "gauge-v1-settings-storage-2",
+      "group_id": "gauge-v1-settings-storage",
+      "expected": "moderate",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.018065999999990368
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "trivial",
+          "score": 0.03866666666666667,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 15,
+              "normalizedScore": 0.13333333333333333,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 1,
+              "normalizedScore": 0.16666666666666666,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 2,
+              "normalizedScore": 0.5,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "general",
+          "semanticMatch": {
+            "taskType": "general",
+            "confidence": 0,
+            "matchMethod": "keyword",
+            "evidenceTokens": []
+          },
+          "domainPattern": null,
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 15,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "trivial",
+        "measured_elapsed_ms": 3.367876999999993
+      },
+      "swarm_baseline": {
+        "tier": "simple",
+        "measured_elapsed_ms": 0.0014829999999932397
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "7e82497ec6eb619e1403b89a5510ef06e8f73fef81bee5ba3526927c199ee5af",
+        "harness": "codex",
+        "baseline_tier": "simple",
+        "proposed_tier": "simple",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-luna",
+          "tier": "simple",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false,
+        "elapsed_ms": 0.6262140000000045,
+        "measured_elapsed_ms": 0.6289979999999957
+      }
+    },
+    {
+      "id": "gauge-v1-retry-client-1",
+      "group_id": "gauge-v1-retry-client",
+      "expected": "moderate",
+      "candidate": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.04536200000001145
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "simple",
+          "score": 0.11026666666666668,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 18,
+              "normalizedScore": 0.17333333333333334,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 1,
+              "normalizedScore": 0.16666666666666666,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 2,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "coding",
+          "semanticMatch": {
+            "taskType": "coding",
+            "confidence": 0.5,
+            "matchMethod": "synonym",
+            "evidenceTokens": [
+              "add",
+              "add"
+            ]
+          },
+          "domainPattern": {
+            "domain": "coding",
+            "subdomain": "frontend",
+            "techStack": [],
+            "complexityModifier": 1.1
+          },
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 18,
+            "fileCount": 0,
+            "hasMultiStep": true,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "simple",
+        "measured_elapsed_ms": 6.585003999999998
+      },
+      "swarm_baseline": {
+        "tier": "simple",
+        "measured_elapsed_ms": 0.005471000000000004
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "0695438edc58496a3373321aea7746aec2bfc594c3c375ac912aedbb46397c59",
+        "harness": "codex",
+        "baseline_tier": "simple",
+        "proposed_tier": "moderate",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-sol",
+          "tier": "moderate",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false,
+        "elapsed_ms": 0.7936950000000138,
+        "measured_elapsed_ms": 0.801479999999998
+      }
+    },
+    {
+      "id": "gauge-v1-retry-client-2",
+      "group_id": "gauge-v1-retry-client",
+      "expected": "moderate",
+      "candidate": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true,
+        "measured_elapsed_ms": 0.025216999999997824
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "simple",
+          "score": 0.08199999999999999,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 15,
+              "normalizedScore": 0.13333333333333333,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 1,
+              "normalizedScore": 0.16666666666666666,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 1,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 1,
+              "normalizedScore": 0.16666666666666666,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 3,
+              "normalizedScore": 0.5,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "debugging",
+          "semanticMatch": {
+            "taskType": "debugging",
+            "confidence": 0.5,
+            "matchMethod": "synonym",
+            "evidenceTokens": [
+              "failure",
+              "failure"
+            ]
+          },
+          "domainPattern": {
+            "domain": "debugging",
+            "subdomain": null,
+            "techStack": [],
+            "complexityModifier": 1
+          },
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "low",
+              "source": "inferred",
+              "priority": 50
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 15,
+            "fileCount": 0,
+            "hasMultiStep": true,
+            "hasTool": false,
+            "hasAnalysis": true
+          }
+        },
+        "tier": "simple",
+        "measured_elapsed_ms": 3.854910999999987
+      },
+      "swarm_baseline": {
+        "tier": "simple",
+        "measured_elapsed_ms": 0.002836000000002059
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "9f9ce2ce426f7f589afd02738e347f7c7e48b1358b61fb0c120a2f5e0e94e956",
+        "harness": "codex",
+        "baseline_tier": "simple",
+        "proposed_tier": null,
+        "proposed_route": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true,
+        "elapsed_ms": 0.02783700000000522,
+        "measured_elapsed_ms": 0.03117599999998788
+      }
+    },
+    {
+      "id": "gauge-v1-replica-cache-1",
+      "group_id": "gauge-v1-replica-cache",
+      "expected": "complex",
+      "candidate": {
+        "tier": "moderate",
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.057738999999997986
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "moderate",
+          "score": 0.24372380952380954,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 16,
+              "normalizedScore": 0.14666666666666667,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 1,
+              "normalizedScore": 0.16666666666666666,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 1,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 1,
+              "normalizedScore": 0.25,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 1,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 2,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 2,
+              "normalizedScore": 0.5,
+              "weight": 0
+            },
+            {
+              "name": "domainComplexity",
+              "rawValue": 1.1,
+              "normalizedScore": 0.42857142857142866,
+              "weight": 0.1
+            },
+            {
+              "name": "techStackDepth",
+              "rawValue": 1,
+              "normalizedScore": 0,
+              "weight": 0.1
+            }
+          ],
+          "inferredTaskType": "debugging",
+          "semanticMatch": {
+            "taskType": "debugging",
+            "confidence": 0.5,
+            "matchMethod": "synonym",
+            "evidenceTokens": [
+              "diagnose",
+              "diagnose"
+            ]
+          },
+          "domainPattern": {
+            "domain": "debugging",
+            "subdomain": null,
+            "techStack": [
+              "auth"
+            ],
+            "complexityModifier": 1.1
+          },
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 16,
+            "fileCount": 0,
+            "hasMultiStep": true,
+            "hasTool": false,
+            "hasAnalysis": true
+          }
+        },
+        "tier": "moderate",
+        "measured_elapsed_ms": 4.4214199999999835
+      },
+      "swarm_baseline": {
+        "tier": "simple",
+        "measured_elapsed_ms": 0.007267000000013013
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "f3860c3826ffc719a3f3cd5d82cd6e5a5365f06213aa64df225d1cf0fc88c2f9",
+        "harness": "codex",
+        "baseline_tier": "simple",
+        "proposed_tier": "moderate",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-sol",
+          "tier": "moderate",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "bounded_engineering"
+        ],
+        "abstained": false,
+        "elapsed_ms": 0.714808000000005,
+        "measured_elapsed_ms": 0.7238480000000038
+      }
+    },
+    {
+      "id": "gauge-v1-replica-cache-2",
+      "group_id": "gauge-v1-replica-cache",
+      "expected": "complex",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.019749999999987722
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "simple",
+          "score": 0.1308666666666667,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 16,
+              "normalizedScore": 0.14666666666666667,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 1,
+              "normalizedScore": 0.16666666666666666,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 1,
+              "normalizedScore": 0.25,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 2,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "review",
+          "semanticMatch": {
+            "taskType": "review",
+            "confidence": 0.3,
+            "matchMethod": "keyword",
+            "evidenceTokens": [
+              "pr"
+            ]
+          },
+          "domainPattern": {
+            "domain": "review",
+            "subdomain": null,
+            "techStack": [],
+            "complexityModifier": 1
+          },
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 16,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "simple",
+        "measured_elapsed_ms": 3.8358650000000125
+      },
+      "swarm_baseline": {
+        "tier": "simple",
+        "measured_elapsed_ms": 0.0016400000000089676
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "c377f03c65be9d33317557eeffe67a81856f8ffe3100d3b81b4b878914128cb9",
+        "harness": "codex",
+        "baseline_tier": "simple",
+        "proposed_tier": "simple",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-luna",
+          "tier": "simple",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false,
+        "elapsed_ms": 0.6651059999999802,
+        "measured_elapsed_ms": 0.6685159999999826
+      }
+    },
+    {
+      "id": "gauge-v1-plugin-migration-1",
+      "group_id": "gauge-v1-plugin-migration",
+      "expected": "complex",
+      "candidate": {
+        "tier": "simple",
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.023072000000013304
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "moderate",
+          "score": 0.15586666666666665,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 16,
+              "normalizedScore": 0.14666666666666667,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 1,
+              "normalizedScore": 0.16666666666666666,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 1,
+              "normalizedScore": 0.16666666666666666,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 3,
+              "normalizedScore": 0.5,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 2,
+              "normalizedScore": 0.5,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "general",
+          "semanticMatch": {
+            "taskType": "general",
+            "confidence": 0,
+            "matchMethod": "keyword",
+            "evidenceTokens": []
+          },
+          "domainPattern": null,
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 16,
+            "fileCount": 0,
+            "hasMultiStep": true,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "moderate",
+        "measured_elapsed_ms": 5.57773899999998
+      },
+      "swarm_baseline": {
+        "tier": "simple",
+        "measured_elapsed_ms": 0.001877000000007456
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "44f7956a554e2dfb7e7c40e4ad279e66feed7af4a6f8682b6bf4ecb915fa9ed3",
+        "harness": "codex",
+        "baseline_tier": "simple",
+        "proposed_tier": "simple",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-luna",
+          "tier": "simple",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "bounded_operation"
+        ],
+        "abstained": false,
+        "elapsed_ms": 0.7228379999999959,
+        "measured_elapsed_ms": 0.7273020000000088
+      }
+    },
+    {
+      "id": "gauge-v1-plugin-migration-2",
+      "group_id": "gauge-v1-plugin-migration",
+      "expected": "complex",
+      "candidate": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true,
+        "measured_elapsed_ms": 0.020214000000009946
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "simple",
+          "score": 0.072,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 15,
+              "normalizedScore": 0.13333333333333333,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 2,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "review",
+          "semanticMatch": {
+            "taskType": "review",
+            "confidence": 0.3,
+            "matchMethod": "keyword",
+            "evidenceTokens": [
+              "pr"
+            ]
+          },
+          "domainPattern": {
+            "domain": "review",
+            "subdomain": null,
+            "techStack": [],
+            "complexityModifier": 1
+          },
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 15,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "simple",
+        "measured_elapsed_ms": 4.110523000000001
+      },
+      "swarm_baseline": {
+        "tier": "simple",
+        "measured_elapsed_ms": 0.0012810000000058608
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "793d168695d815111357c07eed29b153053b4a9d1d036d5172a3c5e016ec20a8",
+        "harness": "codex",
+        "baseline_tier": "simple",
+        "proposed_tier": null,
+        "proposed_route": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true,
+        "elapsed_ms": 0.04088899999999285,
+        "measured_elapsed_ms": 0.04318800000001488
+      }
+    },
+    {
+      "id": "gauge-v1-new-consistency-protocol-1",
+      "group_id": "gauge-v1-new-consistency-protocol",
+      "expected": "apex",
+      "candidate": {
+        "tier": "complex",
+        "reasons": [
+          "systemic_reasoning"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.018218999999987773
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "moderate",
+          "score": 0.16233333333333333,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 25,
+              "normalizedScore": 0.26666666666666666,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 1,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 1,
+              "normalizedScore": 0.16666666666666666,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 1,
+              "normalizedScore": 0.25,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 2,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "coding",
+          "semanticMatch": {
+            "taskType": "coding",
+            "confidence": 0.6,
+            "matchMethod": "keyword",
+            "evidenceTokens": [
+              "write",
+              "develop"
+            ]
+          },
+          "domainPattern": {
+            "domain": "coding",
+            "subdomain": null,
+            "techStack": [],
+            "complexityModifier": 1
+          },
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 25,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": true
+          }
+        },
+        "tier": "moderate",
+        "measured_elapsed_ms": 6.443649999999991
+      },
+      "swarm_baseline": {
+        "tier": "simple",
+        "measured_elapsed_ms": 0.005111999999996897
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "c1ec38e270fb4334e2ee814decca00d8f9b9941a14639e8543b51796da8fe2e0",
+        "harness": "codex",
+        "baseline_tier": "simple",
+        "proposed_tier": "complex",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-astra",
+          "tier": "complex",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "systemic_reasoning"
+        ],
+        "abstained": false,
+        "elapsed_ms": 0.6664049999999975,
+        "measured_elapsed_ms": 0.6696300000000122
+      }
+    },
+    {
+      "id": "gauge-v1-new-consistency-protocol-2",
+      "group_id": "gauge-v1-new-consistency-protocol",
+      "expected": "apex",
+      "candidate": {
+        "tier": "apex",
+        "reasons": [
+          "research_proof_obligations"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.01638700000000881
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "moderate",
+          "score": 0.08573333333333336,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 22,
+              "normalizedScore": 0.22666666666666666,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 1,
+              "normalizedScore": 0.16666666666666666,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 1,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 4,
+              "normalizedScore": 0.6666666666666666,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "analysis",
+          "semanticMatch": {
+            "taskType": "analysis",
+            "confidence": 0.5,
+            "matchMethod": "synonym",
+            "evidenceTokens": [
+              "research",
+              "research"
+            ]
+          },
+          "domainPattern": {
+            "domain": "analysis",
+            "subdomain": null,
+            "techStack": [],
+            "complexityModifier": 1.1
+          },
+          "constraints": [
+            {
+              "type": "latency",
+              "value": "low",
+              "source": "inferred",
+              "priority": 50
+            },
+            {
+              "type": "speed",
+              "value": "high",
+              "source": "inferred",
+              "priority": 49
+            },
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 22,
+            "fileCount": 0,
+            "hasMultiStep": true,
+            "hasTool": false,
+            "hasAnalysis": true
+          }
+        },
+        "tier": "moderate",
+        "measured_elapsed_ms": 5.088339999999988
+      },
+      "swarm_baseline": {
+        "tier": "simple",
+        "measured_elapsed_ms": 0.007853000000011434
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "e803eb9a11c83c021435fd01a10225645bffc509999d68f3d49fcacad14a8060",
+        "harness": "codex",
+        "baseline_tier": "simple",
+        "proposed_tier": "apex",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-astra",
+          "tier": "complex",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "research_proof_obligations"
+        ],
+        "abstained": false,
+        "elapsed_ms": 0.5990309999999965,
+        "measured_elapsed_ms": 0.6021099999999819
+      }
+    },
+    {
+      "id": "gauge-v1-causal-identifiability-1",
+      "group_id": "gauge-v1-causal-identifiability",
+      "expected": "apex",
+      "candidate": {
+        "tier": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true,
+        "measured_elapsed_ms": 0.026097999999990407
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "simple",
+          "score": 0.10686666666666667,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 21,
+              "normalizedScore": 0.21333333333333335,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 1,
+              "normalizedScore": 0.25,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 1,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 1,
+              "normalizedScore": 0.16666666666666666,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "coding",
+          "semanticMatch": {
+            "taskType": "coding",
+            "confidence": 0.5,
+            "matchMethod": "synonym",
+            "evidenceTokens": [
+              "develop",
+              "develop"
+            ]
+          },
+          "domainPattern": {
+            "domain": "coding",
+            "subdomain": null,
+            "techStack": [],
+            "complexityModifier": 1
+          },
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 21,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": false
+          }
+        },
+        "tier": "simple",
+        "measured_elapsed_ms": 6.147923999999989
+      },
+      "swarm_baseline": {
+        "tier": "simple",
+        "measured_elapsed_ms": 0.0015039999999828524
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "5a8f93db3aa7d068cc45d093893ef0de8c219d3c795cf4dafb5b078b97cdf18b",
+        "harness": "codex",
+        "baseline_tier": "simple",
+        "proposed_tier": null,
+        "proposed_route": null,
+        "reasons": [
+          "unrecognized_context"
+        ],
+        "abstained": true,
+        "elapsed_ms": 0.04931200000001468,
+        "measured_elapsed_ms": 0.053392000000002326
+      }
+    },
+    {
+      "id": "gauge-v1-causal-identifiability-2",
+      "group_id": "gauge-v1-causal-identifiability",
+      "expected": "apex",
+      "candidate": {
+        "tier": "apex",
+        "reasons": [
+          "research_proof_obligations"
+        ],
+        "abstained": false,
+        "measured_elapsed_ms": 0.014413000000018883
+      },
+      "local_baseline": {
+        "raw": {
+          "tier": "moderate",
+          "score": 0.15253333333333335,
+          "signals": [
+            {
+              "name": "wordCount",
+              "rawValue": 16,
+              "normalizedScore": 0.14666666666666667,
+              "weight": 0.04
+            },
+            {
+              "name": "fileRefs",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.02
+            },
+            {
+              "name": "multiStep",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "toolUsage",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.04
+            },
+            {
+              "name": "analysisDepth",
+              "rawValue": 1,
+              "normalizedScore": 0.3333333333333333,
+              "weight": 0.08
+            },
+            {
+              "name": "conceptCount",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.2
+            },
+            {
+              "name": "taskVerbComplexity",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.1
+            },
+            {
+              "name": "scopeBreadth",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0.12
+            },
+            {
+              "name": "featureListCount",
+              "rawValue": 3,
+              "normalizedScore": 0.5,
+              "weight": 0.2
+            },
+            {
+              "name": "operationalRisk",
+              "rawValue": 0,
+              "normalizedScore": 0,
+              "weight": 0
+            }
+          ],
+          "inferredTaskType": "analysis",
+          "semanticMatch": {
+            "taskType": "analysis",
+            "confidence": 0.5,
+            "matchMethod": "synonym",
+            "evidenceTokens": [
+              "research",
+              "research"
+            ]
+          },
+          "domainPattern": {
+            "domain": "analysis",
+            "subdomain": null,
+            "techStack": [],
+            "complexityModifier": 1.1
+          },
+          "constraints": [
+            {
+              "type": "budget",
+              "value": "medium",
+              "source": "default",
+              "priority": 10
+            },
+            {
+              "type": "latency",
+              "value": "medium",
+              "source": "default",
+              "priority": 9
+            },
+            {
+              "type": "quality",
+              "value": "medium",
+              "source": "default",
+              "priority": 8
+            },
+            {
+              "type": "speed",
+              "value": "medium",
+              "source": "default",
+              "priority": 7
+            }
+          ],
+          "scopeModifier": null,
+          "_legacy": {
+            "wordCount": 16,
+            "fileCount": 0,
+            "hasMultiStep": false,
+            "hasTool": false,
+            "hasAnalysis": true
+          }
+        },
+        "tier": "moderate",
+        "measured_elapsed_ms": 3.8471059999999966
+      },
+      "swarm_baseline": {
+        "tier": "simple",
+        "measured_elapsed_ms": 0.0012289999999950396
+      },
+      "production_assessment": {
+        "schema_version": 1,
+        "classifier_version": "gauge-0.1.0",
+        "task_digest": "5900ff981b89053abf9757c4d433d048521d40995fba065afd031a8fe44ee3a4",
+        "harness": "codex",
+        "baseline_tier": "simple",
+        "proposed_tier": "apex",
+        "proposed_route": {
+          "executorId": "codex",
+          "model": "gpt-6-astra",
+          "tier": "complex",
+          "source": "registry",
+          "catalogSource": "catalog"
+        },
+        "reasons": [
+          "research_proof_obligations"
+        ],
+        "abstained": false,
+        "elapsed_ms": 0.646365000000003,
+        "measured_elapsed_ms": 0.6494869999999935
+      }
+    }
+  ]
+}

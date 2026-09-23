@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "dataset": "gauge-synthetic-v1",
+  "frozen_at": "2026-09-23T15:24:59Z",
+  "frozen_before_candidate_tuning": true,
+  "author": "OpenAI Codex delegated evaluation agent",
+  "provenance": "Fresh agent-authored synthetic tasks; no candidate classifier inspected; no external calls; no production or private prompts.",
+  "split_algorithm": "Within each tier, number authored groups 1..8; take the two lowest lexical SHA256(gauge-split-v1:<tier>:<number>) digests as heldout; keep both paraphrases together.",
+  "tiers": ["trivial", "simple", "moderate", "complex", "apex"],
+  "files": {
+    "development.jsonl": {
+      "sha256": "6237b1eb765815a9415321ada616baabd4007c03d5cb57a43329c3c1ac3dc01b",
+      "tasks": 60,
+      "independent_groups": 30,
+      "tasks_per_tier": 12
+    },
+    "heldout.jsonl": {
+      "sha256": "5170b559cbd44b02010ef6afd85a183b4f90a2d2af5ce50a2fb48cd4f16a0013",
+      "tasks": 20,
+      "independent_groups": 10,
+      "tasks_per_tier": 4
+    },
+    "PROTOCOL.md": {
+      "sha256": "109a16dda1c35fabb151fd3fe0efe7a1be1b10d5c96a94b79362c10e75b056ad"
+    }
+  },
+  "limitations": [
+    "Labels are not independently human-reviewed.",
+    "Paraphrases are correlated; 80 tasks represent 40 independent scenario groups.",
+    "The small English-only balanced cohort is diagnostic and not representative of production.",
+    "Production promotion requires a fresh human-reviewed cohort and separate authorization."
+  ]
+}
