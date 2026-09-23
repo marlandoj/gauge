@@ -1,5 +1,13 @@
 # Validation — September 23, 2026
 
+## Development review follow-up
+
+The [review packet](../evaluation/REVIEW.md) supplies 25 new agent-authored cases in 16 groups, with five proposed labels per tier. All remain pending. Task wording includes short difficult requests, long localized requests, and same-topic tasks at different tiers. No classifier scoring or tuning was performed on this packet.
+
+The review validator and exporter passed 11 new tests; the portable suite passed 44 tests and skipped 14 tests requiring external swarm fixtures. TypeScript passed. The skipped external tests were not rerun for this evaluation-only change; the earlier release's integration results below are historical evidence. Tests cover pending/disputed reviews, corrections, invalid dates, missing attestations, duplicate tasks, altered case/rubric digests, CLI rejection and no-overwrite private export. A real CLI check reported 25 unresolved cases and exited 2 as intended.
+
+Exports are development-only and explicitly do not authorize promotion. The tool validates supplied attestations but does not authenticate reviewer identity. It refuses to overwrite an existing snapshot; that does not make disk contents immutable. The original classifier, datasets, protocol, freeze and held-out result are unchanged. Human review remains necessary before freezing development labels. A separate independent human-reviewed cohort is still required after the next candidate is frozen.
+
 ## Disposition
 
 The shadow instrumentation and package pass their targeted mechanical checks. **The classifier candidate is rejected for promotion.** Automatic routing is not implemented or enabled. ZOU-1684 supplies assessment; ZOU-1685 continues to own discovery, qualification, model selection and promotion.

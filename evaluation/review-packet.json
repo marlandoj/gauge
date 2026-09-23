@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "cohort_id": "gauge-development-review-2026-09-23",
+  "purpose": "development",
+  "provenance": "agent-authored-developer-visible",
+  "rubric_sha256": "109a16dda1c35fabb151fd3fe0efe7a1be1b10d5c96a94b79362c10e75b056ad",
+  "cases": [
+    {
+      "id": "D01",
+      "group_id": "status-change",
+      "task_text": "Read the supplied service status JSON and return the value of its ready field.",
+      "proposed_tier": "trivial",
+      "proposed_rationale": "Extract one named field; no diagnosis is requested.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D02",
+      "group_id": "security-config",
+      "task_text": "Find the configured retry count in the supplied authentication client settings and report it.",
+      "proposed_tier": "trivial",
+      "proposed_rationale": "A security-related noun does not change a direct lookup.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D03",
+      "group_id": "time-conversion",
+      "task_text": "Convert 21:30 UTC on September 23 to Arizona time.",
+      "proposed_tier": "trivial",
+      "proposed_rationale": "A fixed-offset time conversion.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D04",
+      "group_id": "csv-export",
+      "task_text": "In the supplied CSV header, report the position of the invoice_id column, counting from one.",
+      "proposed_tier": "trivial",
+      "proposed_rationale": "A direct position lookup.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D05",
+      "group_id": "status-change",
+      "task_text": "Please inspect the attached service status JSON. I need the literal value of the ready property. Return only that value in lowercase. Preserve its meaning, make no configuration changes, and do not diagnose the service or propose repairs.",
+      "proposed_tier": "trivial",
+      "proposed_rationale": "The longer wording still asks only for one field.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D06",
+      "group_id": "status-change",
+      "task_text": "Change the existing status endpoint to return the supplied ready flag instead of the constant true; keep its response schema.",
+      "proposed_tier": "simple",
+      "proposed_rationale": "A localized replacement with specified behavior.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D07",
+      "group_id": "security-config",
+      "task_text": "In the authentication client, change the retry count from two to three and update its existing unit-test expectation.",
+      "proposed_tier": "simple",
+      "proposed_rationale": "A known configuration change and matching assertion.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D08",
+      "group_id": "csv-export",
+      "task_text": "Write a pure function that escapes one CSV field: double embedded quotes and quote fields containing a comma, quote or newline.",
+      "proposed_tier": "simple",
+      "proposed_rationale": "A small isolated function with a complete contract.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D09",
+      "group_id": "theme-preference",
+      "task_text": "Rename the existing display setting from Night mode to Dark mode in its label and accessible name.",
+      "proposed_tier": "simple",
+      "proposed_rationale": "A bounded text change in one established component.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D10",
+      "group_id": "status-change",
+      "task_text": "The status endpoint already returns a JSON object containing ready. Replace its constant true with the supplied boolean flag. Keep the existing property name, response status, headers, authorization, logging and error handling. Update the existing assertion for false. Do not introduce a new endpoint or dependency.",
+      "proposed_tier": "simple",
+      "proposed_rationale": "Length and preservation details do not expand the localized implementation.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D11",
+      "group_id": "csv-export",
+      "task_text": "Add a CSV export action to the existing filtered table using the established export API, including loading, empty-result and failed-download states.",
+      "proposed_tier": "moderate",
+      "proposed_rationale": "Related UI and API behavior with bounded edge cases.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D12",
+      "group_id": "theme-preference",
+      "task_text": "Persist the existing theme selection across reloads, honor the system preference until the user chooses, and keep the settings screen synchronized.",
+      "proposed_tier": "moderate",
+      "proposed_rationale": "A bounded feature coordinating preference precedence and state.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D13",
+      "group_id": "status-change",
+      "task_text": "Aggregate three existing health checks into the status response using the supplied readiness truth table and timeout policy.",
+      "proposed_tier": "moderate",
+      "proposed_rationale": "Several related inputs under explicit contracts.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D14",
+      "group_id": "cursor-pagination",
+      "task_text": "Add cursor pagination to an existing list endpoint and its client using the documented opaque-cursor contract, including empty pages and invalid cursors.",
+      "proposed_tier": "moderate",
+      "proposed_rationale": "Client and server changes within an established pagination design.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D15",
+      "group_id": "email-validation",
+      "task_text": "Reuse the existing email validator in the account form and API, preserving their different error formats and adding the specified malformed-address cases.",
+      "proposed_tier": "moderate",
+      "proposed_rationale": "Coordinating validation across two known boundaries.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D16",
+      "group_id": "invoice-delivery",
+      "task_text": "Guarantee one invoice when queue delivery repeats and workers crash between database commit and acknowledgement. Design the recovery path.",
+      "proposed_tier": "complex",
+      "proposed_rationale": "Short wording hides distributed delivery and recovery invariants.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D17",
+      "group_id": "live-schema",
+      "task_text": "Migrate a hot table to a new key while old and new application versions write concurrently; retain rollback after partial backfill.",
+      "proposed_tier": "complex",
+      "proposed_rationale": "Concurrent versions, migration and rollback require a coordinated design.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D18",
+      "group_id": "reservation-race",
+      "task_text": "Diagnose and fix a reservation race across three services where timeouts cause compensations to run after a successful retry.",
+      "proposed_tier": "complex",
+      "proposed_rationale": "Interacting state machines and delayed recovery actions.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D19",
+      "group_id": "offline-sync",
+      "task_text": "Design offline edit synchronization for the existing mobile and web clients, including conflict resolution, deleted records and interrupted reconnects.",
+      "proposed_tier": "complex",
+      "proposed_rationale": "Cross-client convergence and failure behavior need a system design.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D20",
+      "group_id": "regional-failover",
+      "task_text": "Add regional failover to the job scheduler while preserving leases, preventing duplicate work and recovering jobs after a network partition heals.",
+      "proposed_tier": "complex",
+      "proposed_rationale": "Distributed ownership and recovery invariants across regions.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D21",
+      "group_id": "invoice-delivery",
+      "task_text": "Determine whether exactly-once external invoicing is possible when the remote API offers neither idempotency keys nor observable transaction status; prove the limit and identify the weakest extra assumption that changes it.",
+      "proposed_tier": "apex",
+      "proposed_rationale": "Feasibility and impossibility reasoning beyond implementing a known protocol.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D22",
+      "group_id": "replicated-index",
+      "task_text": "Develop a new replicated indexing algorithm with bounded metadata under arbitrary offline intervals, and prove convergence or show those requirements are incompatible.",
+      "proposed_tier": "apex",
+      "proposed_rationale": "Novel algorithm design with a difficult proof obligation.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D23",
+      "group_id": "research-feasibility",
+      "task_text": "Can a protocol satisfy these new fairness and privacy constraints against an adaptive adversary? Establish feasibility and give a proof or counterexample.",
+      "proposed_tier": "apex",
+      "proposed_rationale": "An open-ended formal feasibility question despite its brevity.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D24",
+      "group_id": "learned-scheduler",
+      "task_text": "Investigate whether a learned scheduler can guarantee a tail-latency bound under nonstationary adversarial workloads; formulate assumptions and derive a guarantee or impossibility result.",
+      "proposed_tier": "apex",
+      "proposed_rationale": "Research requires developing and proving a formal claim.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    },
+    {
+      "id": "D25",
+      "group_id": "concurrent-semantics",
+      "task_text": "Define semantics for a new concurrent language with reversible effects, then prove soundness or construct counterexamples that force a redesign.",
+      "proposed_tier": "apex",
+      "proposed_rationale": "New semantics and proof-driven design, not a bounded language feature.",
+      "review": {
+        "status": "pending",
+        "tier": null,
+        "rationale": "",
+        "reviewer": "",
+        "reviewed_at": "",
+        "authority_reference": "",
+        "case_sha256": ""
+      }
+    }
+  ]
+}
