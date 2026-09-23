@@ -26,14 +26,14 @@ Development: 25/25 approved cases versus v1 11/25; original development 60/60 fo
 
 Fourteen source, evaluator, protocol and development inputs were frozen at 9:54 AM Arizona before authoring. A separate OpenAI Codex agent, with no conversation history or access to the implementation, read only the two protocols and created six cases per tier. Its manifest was timestamped at 9:56 AM Arizona. The evaluator verified its digest and counts, rejected exact development duplicates/group overlap, checked source digests before and after scoring, and reserved one opening receipt before loading the cohort. No candidate retuning followed. These filesystem checks detect drift but are not tamper-proof attestations.
 
-All new labels are agent proposals, not human ground truth or an independent vendor panel. [H01–H30](LABEL-REVIEW.md) is a separate review table without predictions. Human review may expose ambiguous labels; preserve the original diagnostic and record corrections separately. Never report general approval to continue as approval of these unseen labels.
+At scoring time all new labels were agent proposals. The operator has subsequently completed human review and approved all [H01–H30](LABEL-REVIEW.md) labels without corrections; [approval provenance](APPROVAL.md) records the exact decision and source checksums separately. Review followed disclosure of the results, and no independent vendor panel or new blinded evaluation is claimed. Original cohort, manifest and results remain unchanged.
 
 ## Remaining failure modes
 
 - Background text before an otherwise elementary request can cause abstention or escalation.
 - Words such as “supplied,” “provided,” or “flag” can cause bounded-edit rules to hide a larger feature.
 - Difficult migrations and research described without the expected vocabulary can be underrated.
-- The category rubric has subjective boundaries; human label review remains necessary.
+- The category rubric has subjective boundaries; H01–H30 review is complete, and future cohorts still require review.
 
 Further keyword additions should not be promoted from these training scores. A future candidate should evaluate a broader local semantic approach and conservative abstention, use reviewed development labels, freeze before a different independent cohort, and meet the existing gates. Do not tune v2 on H01–H30 and retain its independent-test claim.
 
@@ -66,4 +66,4 @@ Twenty new CLI processes measured p50 65.7 ms / p95 68.0 ms; the observer with a
 
 [Preservation evidence](preservation-after.json) confirms thirteen artifacts or archived counterparts retain exact original bytes: v1 classifier, both original datasets/results, original protocol/manifest/freeze/opening receipt, approved labels/review packet, production assessor and shared observer. This continuation made no swarm resolver/catalog/configuration edits. Existing consumers using this source can observe v2 proposals; production model choices remain unchanged. GAUGE_MODE=off still disables observation; live remains unsupported.
 
-The completed deliverable is the frozen v2 experiment and its evidence. Remaining promotion work requires human review of H01–H30, a better-generalizing candidate, fresh validation and separate live-routing authorization. Human approval alone cannot turn this failed diagnostic into a pass.
+The completed deliverable is the frozen v2 experiment and its evidence. Human review of H01–H30 is complete. Remaining promotion work requires a better-generalizing candidate, fresh validation and separate live-routing authorization. Human approval alone cannot turn this failed diagnostic into a pass.

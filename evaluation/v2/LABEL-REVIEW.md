@@ -1,8 +1,8 @@
-# Gauge v2 proposed label review
+# Gauge v2 approved label review
 
 Author: separate OpenAI Codex agent `/root/gauge_diagnostic_author`.
 
-**All 30 labels are agent-authored proposals pending explicit human review. None has been human reviewed.** This separate agent invocation is not an independent model/vendor panel. Only the original rubric and v2 diagnostic protocol were used as context. The author did not inspect candidate code or earlier datasets and cannot certify semantic independence from unseen scenarios. This small balanced English-only synthetic cohort cannot authorize production promotion.
+**The operator completed human review and approved all 30 proposed labels without corrections.** See [approval provenance](APPROVAL.md) and the [checksum-bound decision record](label-approval.json). The task text, proposed labels and rationales below are unchanged. Approval was recorded after the diagnostic results were disclosed; promotion remains rejected. This separate agent invocation is not an independent model/vendor panel. Only the original rubric and v2 diagnostic protocol were used as context. The author did not inspect candidate code or earlier datasets and cannot certify semantic independence from unseen scenarios. This small balanced English-only synthetic cohort cannot authorize production promotion.
 
 | ID | Task | Proposed tier | Reason |
 | --- | --- | --- | --- |

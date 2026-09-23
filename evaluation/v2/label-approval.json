@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "cohort_id": "gauge-v2-diagnostic-H01-H30",
+  "purpose": "post-evaluation-human-label-approval",
+  "reviewer": "marlandoj",
+  "recorded_at": "2026-09-23T17:13:45.983Z",
+  "user_message_timestamp": null,
+  "authority": {
+    "source": "current authenticated user message in Gauge review conversation",
+    "message": "human review completed and approved.",
+    "scope": "H01–H30 proposed labels from evaluation/v2/LABEL-REVIEW.md",
+    "reference": "evaluation/v2/APPROVAL.md"
+  },
+  "review_attestation": "operator-supplied-not-independently-authenticated",
+  "human_reviewed": true,
+  "reviewed_after_results_disclosed": true,
+  "production_promotion_authorized": false,
+  "promotion_status": "rejected-quality-gate",
+  "new_independent_holdout": false,
+  "source_sha256": {
+    "evaluation/v2/cohort.json": "a078dd367cfea9c45c9b602510dfdbccad6e628736495eedfb3236b888c05c0f",
+    "evaluation/v2/cohort-manifest.json": "16bff485848c8001b6d138058592cbc2d2358c3bb9e787f97aca161779d555f6",
+    "evaluation/v2/results-diagnostic.json": "c929c6e06711405434c2bd110d9da4bccd18909b9ef2d106963826a67bdb4c35",
+    "evaluation/v2/candidate-freeze.json": "0744f21965ca30ad53a190d30d0f0fbdd24d663ed8cb684c2c4d6221b4803228",
+    "evaluation/v2/diagnostic-opened.json": "d44aaf2d22d40e1d57cf3688c2c125251b4a938d63c45c1177538d6e414d4442",
+    "evaluation/PROTOCOL.md": "109a16dda1c35fabb151fd3fe0efe7a1be1b10d5c96a94b79362c10e75b056ad",
+    "evaluation/v2/PROTOCOL.md": "c77e3cb6970229f8348e3c262b185cfe6f07e131a26dcd68dab5c5e2fe275b74"
+  },
+  "case_digest_format": "SHA-256 of UTF-8 JSON array [id, group_id, task_text, tier, rationale], compact separators, literal Unicode",
+  "summary": {
+    "cases": 30,
+    "accepted": 30,
+    "corrected": 0,
+    "unresolved": 0,
+    "tiers": {
+      "trivial": 6,
+      "simple": 6,
+      "moderate": 6,
+      "complex": 6,
+      "apex": 6
+    }
+  },
+  "cases": [
+    {
+      "id": "H01",
+      "status": "accepted",
+      "proposed_tier": "trivial",
+      "approved_tier": "trivial",
+      "case_sha256": "45ef7577bf92da2d15db291f7a7aacfcaab1d68955bfb58f04436832ec646756"
+    },
+    {
+      "id": "H02",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "c5ab51e1796d8afcf016b8243ebe4726f96f06561838fa713e294d6087ae1957"
+    },
+    {
+      "id": "H03",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "dcfe0366f711d83f4f2ea75b9b73d0b328ebae8c598a60ef4a3d368a62aa30ea"
+    },
+    {
+      "id": "H04",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "35b32cb5f8ff704d7dd01cb4f71a3e5a0a66575a425d3a9a9a764d641246d02e"
+    },
+    {
+      "id": "H05",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "ca93cbcf71136694e6ad4eca1f655a40a963a05212ef503ea156c8209fa5548e"
+    },
+    {
+      "id": "H06",
+      "status": "accepted",
+      "proposed_tier": "trivial",
+      "approved_tier": "trivial",
+      "case_sha256": "361a069a4ee22f6eec6bd588c7718e3b4d6da5d392b6f91748c4a6a3fd45e525"
+    },
+    {
+      "id": "H07",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "b0ae347622a8ebe8eafc756d8946f00d6a81e986dfde2ccc04e00d56237701f7"
+    },
+    {
+      "id": "H08",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "4cea7d27c0167b7a8a744e2a90a684322b427bef5955e813b880d6bcf59eeb26"
+    },
+    {
+      "id": "H09",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "8435a0264e4e9edc8689dce8af81be2809aa52dd0442c5c383c754d1a7f03ae2"
+    },
+    {
+      "id": "H10",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "9253c5fcd24c03ae4afddd9cf2ce1713398329ca9f546a65f3e808633e949e5b"
+    },
+    {
+      "id": "H11",
+      "status": "accepted",
+      "proposed_tier": "trivial",
+      "approved_tier": "trivial",
+      "case_sha256": "cbe6aa0f999126f627d146e6fcc1c265db832ab1d73a14471c9be09aabea2077"
+    },
+    {
+      "id": "H12",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "9ccbc6a4ebe126ab3b6b2f9ba94ddbcaffdbae8c66ab9edc72824a6f877d630b"
+    },
+    {
+      "id": "H13",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "c58aca6285de7a9cab56b4838d003b4812e40f10b5c18ee7144dd6caf073eb2b"
+    },
+    {
+      "id": "H14",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "83f20e49a54cbfa5666da65c5e374d16809d048a2ffabb3822bb9e9919579d2e"
+    },
+    {
+      "id": "H15",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "c07b26e858e714c8d345a8f7e839e22728f3cd84a804a04a6e4d163fffef8a54"
+    },
+    {
+      "id": "H16",
+      "status": "accepted",
+      "proposed_tier": "trivial",
+      "approved_tier": "trivial",
+      "case_sha256": "600614b62296aa5f0fc3261d990bcb0923a26cc6207c9013a2fc177c31e2235b"
+    },
+    {
+      "id": "H17",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "bcdf847c1e1558cd424ca18a4850ffd4baf96665b7dd10aaf2772d093093f404"
+    },
+    {
+      "id": "H18",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "6a8a682d484e6862449a881eb1944106f12f8c0efe78a455ce30c83b54075db0"
+    },
+    {
+      "id": "H19",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "2231fcae6c8f2c2d1afa35aa7c2f1da2480ff604d71b707a5d3be513a0725175"
+    },
+    {
+      "id": "H20",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "c526cbb756f30cf5bd503ce932ca720a627b42e17830df14975ffa7a533570d8"
+    },
+    {
+      "id": "H21",
+      "status": "accepted",
+      "proposed_tier": "trivial",
+      "approved_tier": "trivial",
+      "case_sha256": "e9ef0c371a1c947d420c9a73fdfcc5b520ecd5d18938c6d1e721ffddb558af4d"
+    },
+    {
+      "id": "H22",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "1b380601ede2b439e6c615bc5d4267517ed0d8aa65f1a91246dcc83a89cdc937"
+    },
+    {
+      "id": "H23",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "aced72472a3b3d6ca94b979324cb6c3332aa44c2f3bb7267a940fa104375e09f"
+    },
+    {
+      "id": "H24",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "3d8a0add5014af0e6d86f09682d95a4bc3163edbd84b889b4bf44e1b1b7e88f6"
+    },
+    {
+      "id": "H25",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "3c63edf7fd429c140c3099080ae7f44aec63d2ac273c20bd95c0db1f6b1d0e40"
+    },
+    {
+      "id": "H26",
+      "status": "accepted",
+      "proposed_tier": "trivial",
+      "approved_tier": "trivial",
+      "case_sha256": "773e8c4e413a87b96849e90182a5591a9ab48052f8c9c739f3ab4124417c05ca"
+    },
+    {
+      "id": "H27",
+      "status": "accepted",
+      "proposed_tier": "simple",
+      "approved_tier": "simple",
+      "case_sha256": "230dc6bd3cf93150c626786daa166c0362402e6730d250360eb1afda852bbd36"
+    },
+    {
+      "id": "H28",
+      "status": "accepted",
+      "proposed_tier": "moderate",
+      "approved_tier": "moderate",
+      "case_sha256": "15a2e83bd64379b03ee1a1025b3b950564105af7ba715e2ed5b983897e873f47"
+    },
+    {
+      "id": "H29",
+      "status": "accepted",
+      "proposed_tier": "complex",
+      "approved_tier": "complex",
+      "case_sha256": "7df9144066fb4b5022a9bd60be0a17fea18433c6c3d7a5e79f3f2ed9387cf32a"
+    },
+    {
+      "id": "H30",
+      "status": "accepted",
+      "proposed_tier": "apex",
+      "approved_tier": "apex",
+      "case_sha256": "e33dd625a1dae1701828e54b011981ee02b607b1d375190e2b7bb473aeaf5ac9"
+    }
+  ]
+}
