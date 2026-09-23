@@ -63,7 +63,7 @@ JSONL accepts records up to 8 KiB and stops appending at 4 MiB. It never deletes
 
 See [validation](docs/validation.md), [baseline](docs/baseline.md), [evaluation protocol](evaluation/PROTOCOL.md), and [editable workflow](docs/workflow.md).
 
-The follow-up [development label review](evaluation/REVIEW.md) contains 25 new synthetic cases awaiting human acceptance, correction or dispute. Its [JSON packet](evaluation/review-packet.json) and `evaluation/review.ts` validator preserve label provenance and refuse to freeze unresolved reviews. These developer-visible cases cannot serve as an independent holdout. No classifier tuning or new accuracy claim has been made.
+The follow-up [development label review](evaluation/REVIEW.md) contains 25 synthetic cases explicitly approved by the operator, with [approval provenance](evaluation/APPROVAL.md) and a [frozen development cohort](evaluation/development-reviewed.json). Its [JSON packet](evaluation/review-packet.json) and `evaluation/review.ts` validator preserve label provenance and refuse to freeze unresolved reviews. These developer-visible cases cannot serve as an independent holdout. No classifier tuning or new accuracy claim has been made.
 
 - One frozen dataset: 60 development tasks and 20 held-out tasks, grouped by paraphrase before the split; 40 independent scenarios total.
 - Agent-authored English labels are diagnostic, not human ground truth. Development accuracy was 100%; held-out accuracy fell to 40%, showing poor generalization.

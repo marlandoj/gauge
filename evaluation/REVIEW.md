@@ -1,6 +1,6 @@
 # Gauge development label review
 
-Status: awaiting human review. All 25 proposed labels below are agent-authored. No label has been accepted on the operator's behalf. This packet has not been scored against Gauge.
+Status: approved by the operator. All 25 agent-authored proposals D01–D25 were explicitly accepted without corrections. See [approval provenance](APPROVAL.md) and the [frozen development cohort](development-reviewed.json). This packet has not been scored against Gauge.
 
 This is a development cohort for diagnosing generalization, with five proposals per tier. Its author and implementer can see every case, so it cannot become an independent holdout, even after human review. It is synthetic and balanced rather than a sample of production traffic. No user prompts or confidential records were copied here.
 
@@ -52,7 +52,7 @@ The authoritative rubric is the unchanged [original protocol](PROTOCOL.md). Each
 
 ## Machine-readable contract
 
-`review-packet.json` contains the same tasks, proposed tiers and reasons, with every review pending. Accepted or corrected reviews require the final tier, reviewer, rationale, actual UTC timestamp, a reference to the explicit human decision, and a checksum of the case and rubric at review time. Corrections retain the original proposal. Changed task text, grouping, proposal or rubric invalidates the old case checksum.
+`review-packet.json` contains the same tasks, proposed tiers and reasons, with every review accepted. Each review records the final tier, reviewer, rationale, actual UTC recording timestamp, reference to the explicit human decision, and checksum of the case and rubric at review time. Corrections retain the original proposal. Changed task text, grouping, proposal or rubric invalidates the old case checksum.
 
 The validator checks supplied attestations; it cannot authenticate a human or prove that a decision reference is genuine. A trusted operator must supply or confirm them. Do not fabricate reviewer names, timestamps, authority references or acceptance.
 
@@ -63,4 +63,4 @@ bun /absolute/path/gauge/evaluation/review.ts freeze /absolute/path/reviewed-pac
 
 `check` exits 2 for pending or disputed labels, 1 for invalid input, and 0 for structurally complete review. `freeze` refuses unresolved labels, rubric drift, relative paths and existing output files. It exports a private, development-only snapshot with source/rubric digests and full review provenance. This is no-overwrite behavior, not tamper-proof storage; the owner can still modify a file afterward. No freeze or scoring happens automatically.
 
-After review: freeze development labels, improve the candidate using only development material, and freeze its implementation before a different evaluator prepares or reveals a genuinely independent human-reviewed holdout. Use production classifier exports for evaluation. Retain original results. Promotion remains a separate decision after quality and routing-preservation checks.
+The approved development labels are frozen in `development-reviewed.json`: 25 cases, 16 groups, five labels per tier, zero unresolved reviews. Next: improve the candidate using only development material, and freeze its implementation before a different evaluator prepares or reveals a genuinely independent human-reviewed holdout. Use production classifier exports for evaluation. Retain original results. Promotion remains a separate decision after quality and routing-preservation checks.
