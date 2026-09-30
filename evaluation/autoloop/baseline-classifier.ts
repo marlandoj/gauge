@@ -2,7 +2,7 @@ export const TIERS = ['trivial', 'simple', 'moderate', 'complex', 'apex'] as con
 export type Tier = typeof TIERS[number];
 export const HARNESSES = ['claude-code', 'codex', 'gemini', 'kimi', 'opencode', 'pi', 'hermes'] as const;
 export type Harness = typeof HARNESSES[number];
-export const VERSION = 'gauge-0.3.1';
+export const VERSION = 'gauge-0.3.0';
 export type Assessment = { tier: Tier | null; reasons: string[]; abstained: boolean };
 export function swarmTier(tier: Tier): Exclude<Tier, 'apex'> { return tier === 'apex' ? 'complex' : tier; }
 
@@ -39,7 +39,7 @@ export function classify(value: unknown): Assessment {
   const coordination = has(/\b(across|both|sites|systems|services|workers|controllers|sellers|scanners|directories|archives|providers|clients|channels)\b/);
   if (reasoning && transition && failure && coordination) return result('complex', ['cross_boundary_change']);
   const resultOnly = has(/\b(return|report|copy|express|convert|extract|what is)\b/)
-    && !reasoning && !/\b(function|helper|component|handler|script|endpoint|api|file|code|make|compare|evaluate|recommend|analy[sz]e|review|root cause|trade.offs)\b/.test(outsideQuotes);
+    && !reasoning && !has(/\b(function|helper|component|handler|script|endpoint|api|file|code|make|compare|evaluate|recommend|analy[sz]e|review|root cause|trade.offs)\b/);
   if (resultOnly && (!has(/\b(change|replace|update|edit)\b/) || has(/\breturn (?:the new|only|.* exactly)\b/)))
     return result('trivial', ['bounded_lookup']);
   if (has(/^(evaluate|calculate|compute)\b/) && has(/\b(true|false|boolean|arithmetic)\b/) && !reasoning)
