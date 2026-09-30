@@ -23,9 +23,9 @@
  */
 import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { summarize, type Prediction } from '../metrics.ts';
-import { classify as candidateClassify } from '../../src/classifier.ts';
-import { classify as baselineClassify } from './baseline-classifier.ts';
+import { summarize, type Prediction } from '../metrics.js';
+import { classify as candidateClassify } from '../../src/classifier.js';
+import { classify as baselineClassify } from './baseline-classifier.js';
 
 type Row = { id: string; group_id: string; task_text: string; tier: string };
 
@@ -100,7 +100,7 @@ const score =
   + candidate.two_or_more_tier_errors.count * 10
   + Math.round((1 - (candidate.accuracy ?? 0)) * 1000);
 
-const pct = (n: number) => `${((n ?? 0) * 100).toFixed(1)}%`;
+const pct = (n: number | null) => `${((n ?? 0) * 100).toFixed(1)}%`;
 console.error(`cases=${cohort.length} groups=${baseline.groups.total}`);
 console.error(`accuracy    ${candidate.correct}/${cohort.length} (${pct(candidate.accuracy)})  baseline ${baseline.correct}/${cohort.length} (${pct(baseline.accuracy)})`);
 console.error(`cpx/apex under-routing ${candidate.complex_apex_under_routing.count}/${candidate.complex_apex_under_routing.denominator}  baseline ${baseline.complex_apex_under_routing.count}/${baseline.complex_apex_under_routing.denominator}`);
