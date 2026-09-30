@@ -43,3 +43,8 @@ test('unbounded formal feasibility is distinct from a definition', () => {
   expect(classify('Determine feasibility against an adaptive adversary and give a proof or counterexample.').tier).toBe('apex');
   expect(classify('Explain the definition of an adaptive adversary.').tier).toBe('trivial');
 });
+
+test('analytical words inside quoted source data do not escalate a pure extraction', () => {
+  const task = 'For the document index, copy the case reference from this line exactly: "Hearing postponed; reference: AB-2047; next review pending." Return only the reference, including its hyphen.';
+  expect(classify(task).tier).toBe('trivial');
+});
